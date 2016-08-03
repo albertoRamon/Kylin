@@ -216,6 +216,9 @@ Or, you can filter by category, clicking in category too ![alt text](./Images/47
   <img src=./Images/49.png />
 </p>
 
+Tableau Files: [Full.twb](https://github.com/albertoRamon/Kylin/blob/master/KylinWithTableau/Full.twb "Download Full Example") &nbsp;&nbsp;&nbsp;
+ [OnlyConnection.twb](https://github.com/albertoRamon/Kylin/blob/master/KylinWithTableau/OnlyConnection.twb "Download with only Connection")
+
 &nbsp;
 &nbsp;
 
