@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9300.16.0606.1812                                -->
+<workbook source-build='9.3.3 (9300.16.0606.1812)' source-platform='win' version='9.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='defaultCatalog' inline='true' name='genericodbc.078csd71wbf5qf1fmqmv11kxjhin' version='9.3'>
+      <connection class='genericodbc' dbname='defaultCatalog' odbc-connect-string-extras='PROJECT=learn_kylin' odbc-dbms-name='Gen ODBC Server' odbc-driver='KylinODBCDriver' odbc-dsn='' odbc-suppress-connection-pooling='' odbc-use-connection-pooling='' port='7070' schema='' server='http://172.17.0.2' username='ADMIN'>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[KYLIN_SALES].[LEAF_CATEG_ID]' />
+                <expression op='[KYLIN_CATEGORY_GROUPINGS].[LEAF_CATEG_ID]' />
+              </expression>
+              <expression op='='>
+                <expression op='[KYLIN_SALES].[LSTG_SITE_ID]' />
+                <expression op='[KYLIN_CATEGORY_GROUPINGS].[SITE_ID]' />
+              </expression>
+            </expression>
+          </clause>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[KYLIN_SALES].[PART_DT]' />
+                <expression op='[KYLIN_CAL_DT].[CAL_DT]' />
+              </expression>
+            </clause>
+            <relation name='KYLIN_SALES' table='[DEFAULT].[KYLIN_SALES]' type='table' />
+            <relation name='KYLIN_CAL_DT' table='[DEFAULT].[KYLIN_CAL_DT]' type='table' />
+          </relation>
+          <relation name='KYLIN_CATEGORY_GROUPINGS' table='[DEFAULT].[KYLIN_CATEGORY_GROUPINGS]' type='table' />
+        </relation>
+        <cols>
+          <map key='[CAL_DT]' value='[KYLIN_CAL_DT].[CAL_DT]' />
+          <map key='[CATEG_LVL2_NAME]' value='[KYLIN_CATEGORY_GROUPINGS].[CATEG_LVL2_NAME]' />
+          <map key='[CATEG_LVL3_NAME]' value='[KYLIN_CATEGORY_GROUPINGS].[CATEG_LVL3_NAME]' />
+          <map key='[LEAF_CATEG_ID (KYLIN_CATEGORY_GROUPINGS)]' value='[KYLIN_CATEGORY_GROUPINGS].[LEAF_CATEG_ID]' />
+          <map key='[LEAF_CATEG_ID]' value='[KYLIN_SALES].[LEAF_CATEG_ID]' />
+          <map key='[LSTG_FORMAT_NAME]' value='[KYLIN_SALES].[LSTG_FORMAT_NAME]' />
+          <map key='[LSTG_SITE_ID]' value='[KYLIN_SALES].[LSTG_SITE_ID]' />
+          <map key='[META_CATEG_NAME]' value='[KYLIN_CATEGORY_GROUPINGS].[META_CATEG_NAME]' />
+          <map key='[PART_DT]' value='[KYLIN_SALES].[PART_DT]' />
+          <map key='[PRICE]' value='[KYLIN_SALES].[PRICE]' />
+          <map key='[SELLER_ID]' value='[KYLIN_SALES].[SELLER_ID]' />
+          <map key='[SITE_ID]' value='[KYLIN_CATEGORY_GROUPINGS].[SITE_ID]' />
+          <map key='[UPD_DATE]' value='[KYLIN_CATEGORY_GROUPINGS].[UPD_DATE]' />
+          <map key='[UPD_USER]' value='[KYLIN_CATEGORY_GROUPINGS].[UPD_USER]' />
+          <map key='[USER_DEFINED_FIELD1]' value='[KYLIN_CATEGORY_GROUPINGS].[USER_DEFINED_FIELD1]' />
+          <map key='[USER_DEFINED_FIELD3]' value='[KYLIN_CATEGORY_GROUPINGS].[USER_DEFINED_FIELD3]' />
+          <map key='[WEEK_BEG_DT]' value='[KYLIN_CAL_DT].[WEEK_BEG_DT]' />
+        </cols>
+        <connection-customization class='genericodbc' enabled='false' version='9.3'>
+          <vendor name='Gen ODBC Server' />
+          <driver name='KylinODBCDriver' />
+          <customizations>
+            <customization name='CAP_CREATE_TEMP_TABLES' value='no' />
+            <customization name='CAP_ISOLATION_LEVEL_READ_COMMITTED' value='no' />
+            <customization name='CAP_ISOLATION_LEVEL_READ_UNCOMMITTED' value='no' />
+            <customization name='CAP_ISOLATION_LEVEL_REPEATABLE_READS' value='no' />
+            <customization name='CAP_ISOLATION_LEVEL_SERIALIZABLE' value='no' />
+            <customization name='CAP_ODBC_BIND_DETECT_ALIAS_CASE_FOLDING' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_DATETIME_AS_CHAR' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_DATE_AS_CHAR' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_MAX_STRING_BUFFERS' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_MEDIUM_STRING_BUFFERS' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_SIGNED' value='no' />
+            <customization name='CAP_ODBC_BIND_FORCE_SMALL_STRING_BUFFERS' value='no' />
+            <customization name='CAP_ODBC_BIND_SUPPRESS_INT64' value='no' />
+            <customization name='CAP_ODBC_BIND_SUPPRESS_PREFERRED_TYPES' value='no' />
+            <customization name='CAP_ODBC_BIND_SUPPRESS_WIDE_CHAR' value='no' />
+            <customization name='CAP_ODBC_CURSOR_DYNAMIC' value='no' />
+            <customization name='CAP_ODBC_CURSOR_FORWARD_ONLY' value='no' />
+            <customization name='CAP_ODBC_CURSOR_KEYSET_DRIVEN' value='no' />
+            <customization name='CAP_ODBC_CURSOR_STATIC' value='no' />
+            <customization name='CAP_ODBC_ERROR_IGNORE_FALSE_ALARM' value='no' />
+            <customization name='CAP_ODBC_FETCH_BUFFERS_RESIZABLE' value='no' />
+            <customization name='CAP_ODBC_FETCH_BUFFERS_SIZE_MASSIVE' value='no' />
+            <customization name='CAP_ODBC_FETCH_CONTINUE_ON_ERROR' value='no' />
+            <customization name='CAP_ODBC_METADATA_STRING_LENGTH_UNKNOWN' value='no' />
+            <customization name='CAP_ODBC_METADATA_SUPPRESS_EXECUTED_QUERY' value='no' />
+            <customization name='CAP_ODBC_METADATA_SUPPRESS_PREPARED_QUERY' value='no' />
+            <customization name='CAP_ODBC_METADATA_SUPPRESS_SELECT_STAR' value='no' />
+            <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLCOLUMNS_API' value='no' />
+            <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLFOREIGNKEYS_API' value='no' />
+            <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLPRIMARYKEYS_API' value='no' />
+            <customization name='CAP_ODBC_METADATA_SUPPRESS_SQLSTATISTICS_API' value='no' />
+            <customization name='CAP_ODBC_REBIND_SKIP_UNBIND' value='no' />
+            <customization name='CAP_ODBC_TRIM_VARCHAR_PADDING' value='no' />
+            <customization name='CAP_ODBC_UNBIND_AUTO' value='no' />
+            <customization name='CAP_ODBC_UNBIND_BATCH' value='no' />
+            <customization name='CAP_ODBC_UNBIND_EACH' value='no' />
+            <customization name='CAP_QUERY_BOOLEXPR_TO_INTEXPR' value='yes' />
+            <customization name='CAP_QUERY_FROM_REQUIRES_ALIAS' value='no' />
+            <customization name='CAP_QUERY_GROUP_BY_ALIAS' value='no' />
+            <customization name='CAP_QUERY_GROUP_BY_DEGREE' value='no' />
+            <customization name='CAP_QUERY_HAVING_REQUIRES_GROUP_BY' value='no' />
+            <customization name='CAP_QUERY_HAVING_UNSUPPORTED' value='no' />
+            <customization name='CAP_QUERY_JOIN_ACROSS_SCHEMAS' value='no' />
+            <customization name='CAP_QUERY_JOIN_REQUIRES_SCOPE' value='no' />
+            <customization name='CAP_QUERY_NULL_REQUIRES_CAST' value='no' />
+            <customization name='CAP_QUERY_SELECT_ALIASES_SORTED' value='yes' />
+            <customization name='CAP_QUERY_SORT_BY_DEGREE' value='yes' />
+            <customization name='CAP_QUERY_SUBQUERIES' value='yes' />
+            <customization name='CAP_QUERY_SUBQUERIES_WITH_TOP' value='yes' />
+            <customization name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT' value='no' />
+            <customization name='CAP_QUERY_TOPSTYLE_LIMIT' value='yes' />
+            <customization name='CAP_QUERY_TOPSTYLE_ROWNUM' value='no' />
+            <customization name='CAP_QUERY_TOPSTYLE_TOP' value='no' />
+            <customization name='CAP_QUERY_TOP_0_METADATA' value='no' />
+            <customization name='CAP_QUERY_TOP_N' value='yes' />
+            <customization name='CAP_QUERY_WHERE_FALSE_METADATA' value='no' />
+            <customization name='CAP_SELECT_INTO' value='yes' />
+            <customization name='CAP_SELECT_TOP_INTO' value='yes' />
+            <customization name='CAP_SET_ISOLATION_LEVEL_VIA_ODBC_API' value='no' />
+            <customization name='CAP_SET_ISOLATION_LEVEL_VIA_SQL' value='no' />
+            <customization name='CAP_SUPPRESS_CONNECTION_POOLING' value='no' />
+            <customization name='CAP_SUPPRESS_DISCOVERY_QUERIES' value='no' />
+            <customization name='SQL_AGGREGATE_FUNCTIONS' value='127' />
+            <customization name='SQL_CATALOG_NAME_SEPARATOR' value='.' />
+            <customization name='SQL_CATALOG_TERM' value='database' />
+            <customization name='SQL_CATALOG_USAGE' value='7' />
+            <customization name='SQL_COLUMN_ALIAS' value='Y' />
+            <customization name='SQL_CONVERT_FUNCTIONS' value='2126986352' />
+            <customization name='SQL_DATETIME_LITERALS' value='65535' />
+            <customization name='SQL_DBMS_NAME' value='Gen ODBC Server' />
+            <customization name='SQL_DBMS_VER' value='01.00.00000' />
+            <customization name='SQL_DRIVER_ODBC_VER' value='03.00' />
+            <customization name='SQL_DRIVER_VER' value='01.00.00000' />
+            <customization name='SQL_IDENTIFIER_QUOTE_CHAR' value='&quot;' />
+            <customization name='SQL_MAX_IDENTIFIER_LEN' value='15472' />
+            <customization name='SQL_NUMERIC_FUNCTIONS' value='0' />
+            <customization name='SQL_ODBC_INTERFACE_CONFORMANCE' value='2126986352' />
+            <customization name='SQL_ODBC_VER' value='03.80.0000' />
+            <customization name='SQL_OJ_CAPABILITIES' value='127' />
+            <customization name='SQL_QUOTED_IDENTIFIER_CASE' value='1' />
+            <customization name='SQL_SCHEMA_TERM' value='owner' />
+            <customization name='SQL_SCHEMA_USAGE' value='2126970901' />
+            <customization name='SQL_SPECIAL_CHARACTERS' value='$_' />
+            <customization name='SQL_SQL92_DATETIME_FUNCTIONS' value='7' />
+            <customization name='SQL_SQL92_NUMERIC_VALUE_FUNCTIONS' value='2126986352' />
+            <customization name='SQL_SQL92_PREDICATES' value='2126986352' />
+            <customization name='SQL_SQL92_RELATIONAL_JOIN_OPERATORS' value='2126986352' />
+            <customization name='SQL_SQL92_STRING_FUNCTIONS' value='2126986352' />
+            <customization name='SQL_SQL92_VALUE_EXPRESSIONS' value='2126986352' />
+            <customization name='SQL_SQL_CONFORMANCE' value='2126986352' />
+            <customization name='SQL_STRING_FUNCTIONS' value='0' />
+            <customization name='SQL_SYSTEM_FUNCTIONS' value='0' />
+            <customization name='SQL_TABLE_TERM' value='table' />
+            <customization name='SQL_TIMEDATE_ADD_INTERVALS' value='511' />
+            <customization name='SQL_TIMEDATE_DIFF_INTERVALS' value='511' />
+            <customization name='SQL_TIMEDATE_FUNCTIONS' value='1573378' />
+            <customization name='SQL_TXN_CAPABLE' value='0' />
+          </customizations>
+        </connection-customization>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>PART_DT</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[PART_DT]</local-name>
+            <parent-name>[KYLIN_SALES]</parent-name>
+            <remote-alias>PART_DT</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LEAF_CATEG_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LEAF_CATEG_ID]</local-name>
+            <parent-name>[KYLIN_SALES]</parent-name>
+            <remote-alias>LEAF_CATEG_ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>-1</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LSTG_SITE_ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[LSTG_SITE_ID]</local-name>
+            <parent-name>[KYLIN_SALES]</parent-name>
+            <remote-alias>LSTG_SITE_ID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>-1</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_LONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LSTG_FORMAT_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LSTG_FORMAT_NAME]</local-name>
+            <parent-name>[KYLIN_SALES]</parent-name>
+            <remote-alias>LSTG_FORMAT_NAME</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRICE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[PRICE]</local-name>
+            <parent-name>[KYLIN_SALES]</parent-name>
+            <remote-alias>PRICE</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>19</precision>
+            <scale>4</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SELLER_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SELLER_ID]</local-name>
+            <parent-name>[KYLIN_SALES]</parent-name>
+            <remote-alias>SELLER_ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>-1</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WEEK_BEG_DT</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[WEEK_BEG_DT]</local-name>
+            <parent-name>[KYLIN_CAL_DT]</parent-name>
+            <remote-alias>WEEK_BEG_DT</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CAL_DT</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CAL_DT]</local-name>
+            <parent-name>[KYLIN_CAL_DT]</parent-name>
+            <remote-alias>CAL_DT</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USER_DEFINED_FIELD1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[USER_DEFINED_FIELD1]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>USER_DEFINED_FIELD1</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>USER_DEFINED_FIELD3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[USER_DEFINED_FIELD3]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>USER_DEFINED_FIELD3</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UPD_DATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UPD_DATE]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>UPD_DATE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UPD_USER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UPD_USER]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>UPD_USER</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LEAF_CATEG_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LEAF_CATEG_ID (KYLIN_CATEGORY_GROUPINGS)]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>LEAF_CATEG_ID</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>-1</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SITE_ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SITE_ID]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>SITE_ID</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>-1</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_LONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>META_CATEG_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[META_CATEG_NAME]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>META_CATEG_NAME</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CATEG_LVL2_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CATEG_LVL2_NAME]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>CATEG_LVL2_NAME</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CATEG_LVL3_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CATEG_LVL3_NAME]</local-name>
+            <parent-name>[KYLIN_CATEGORY_GROUPINGS]</parent-name>
+            <remote-alias>CATEG_LVL3_NAME</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cal Dt' datatype='date' name='[CAL_DT]' role='dimension' type='ordinal' />
+      <column caption='Categ Lvl2 Name' datatype='string' name='[CATEG_LVL2_NAME]' role='dimension' type='nominal' />
+      <column caption='Categ Lvl3 Name' datatype='string' name='[CATEG_LVL3_NAME]' role='dimension' type='nominal' />
+      <column caption='Leaf Categ Id (Kylin Category Groupings)' datatype='integer' name='[LEAF_CATEG_ID (KYLIN_CATEGORY_GROUPINGS)]' role='dimension' type='ordinal' />
+      <column caption='Leaf Categ Id' datatype='integer' name='[LEAF_CATEG_ID]' role='dimension' type='ordinal' />
+      <column caption='Lstg Format Name' datatype='string' name='[LSTG_FORMAT_NAME]' role='dimension' type='nominal' />
+      <column caption='Lstg Site Id' datatype='integer' name='[LSTG_SITE_ID]' role='dimension' type='ordinal' />
+      <column caption='Meta Categ Name' datatype='string' name='[META_CATEG_NAME]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Part Dt' datatype='date' name='[PART_DT]' role='dimension' type='ordinal' />
+      <column caption='Price' datatype='real' name='[PRICE]' role='measure' type='quantitative' />
+      <column caption='Seller Id' datatype='integer' name='[SELLER_ID]' role='dimension' type='ordinal' />
+      <column caption='Site Id' datatype='integer' name='[SITE_ID]' role='dimension' type='ordinal' />
+      <column caption='Upd Date' datatype='string' name='[UPD_DATE]' role='dimension' type='nominal' />
+      <column caption='Upd User' datatype='string' name='[UPD_USER]' role='dimension' type='nominal' />
+      <column caption='User Defined Field1' datatype='string' name='[USER_DEFINED_FIELD1]' role='dimension' type='nominal' />
+      <column caption='User Defined Field3' datatype='string' name='[USER_DEFINED_FIELD3]' role='dimension' type='nominal' />
+      <column caption='Week Beg Dt' datatype='date' name='[WEEK_BEG_DT]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.69385' measure-ordering='alphabetic' measure-percentage='0.30615' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Spain&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='defaultCatalog' name='genericodbc.078csd71wbf5qf1fmqmv11kxjhin' />
+          </datasources>
+          <datasource-dependencies datasource='genericodbc.078csd71wbf5qf1fmqmv11kxjhin'>
+            <column caption='Cal Dt' datatype='date' name='[CAL_DT]' role='dimension' type='ordinal' />
+            <column caption='Price' datatype='real' name='[PRICE]' role='measure' type='quantitative' />
+            <column-instance column='[CAL_DT]' derivation='Quarter' name='[qr:CAL_DT:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[PRICE]' derivation='Sum' name='[sum:PRICE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CAL_DT]' derivation='Year' name='[yr:CAL_DT:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[genericodbc.078csd71wbf5qf1fmqmv11kxjhin].[yr:CAL_DT:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[genericodbc.078csd71wbf5qf1fmqmv11kxjhin].[sum:PRICE:qk]</rows>
+        <cols>[genericodbc.078csd71wbf5qf1fmqmv11kxjhin].[qr:CAL_DT:ok]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='28'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[genericodbc.078csd71wbf5qf1fmqmv11kxjhin].[yr:CAL_DT:ok]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[genericodbc.078csd71wbf5qf1fmqmv11kxjhin].[yr:CAL_DT:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      2v8C0mkr8fIum28AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
