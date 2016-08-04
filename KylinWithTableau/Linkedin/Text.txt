@@ -1,0 +1,10 @@
+* Apache Kylin:  is a OLAP (Cubes) over Hadoop using SQL
+
+* Tableau Software: Data visualization tool to Interactive Dashboards
+
+Now we can use both together, you can test using this manual
+
+https://github.com/albertoRamon/Kylin/tree/master/KylinWithTableau
+
+
+Apache Kylin & Tableau
