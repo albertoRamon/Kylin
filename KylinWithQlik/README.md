@@ -214,6 +214,8 @@ We can put “alias” to data easy:
     LOAD WEEK_BEG_DT,CAL_DT;
     select * from KYLIN_CAL_DT;
 
+The final load scripts is “[script_data_2.txt](script_data_2.txt)”, on gitHub
+
 In my Hard: a Laptop with HBase, Kylin, Hive .. In a Docker Container and Qlik in a Virtual Box, the performance to ingest data has been good, only 2 sec for 3 Tables and 10K Rows
 <p align="center">
   <img src=./Images/34.png />
