@@ -1,0 +1,35 @@
+SET ThousandSep='.';
+SET DecimalSep=',';
+SET MoneyThousandSep='.';
+SET MoneyDecimalSep=',';
+SET MoneyFormat='#.##0,00 €;-#.##0,00 €';
+SET TimeFormat='h:mm:ss';
+SET DateFormat='YYYY-MM-DD';
+SET TimestampFormat='YYYY-MM-DD h:mm:ss[.fff]';
+SET FirstWeekDay=0;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='es-ES';
+SET MonthNames='ene;feb;mar;abr;may;jun;jul;ago;sep;oct;nov;dic';
+SET LongMonthNames='enero;febrero;marzo;abril;mayo;junio;julio;agosto;septiembre;octubre;noviembre;diciembre';
+SET DayNames='lun;mar;mié;jue;vie;sáb;dom';
+SET LongDayNames='lunes;martes;miércoles;jueves;viernes;sábado;domingo';
+
+LIB CONNECT TO 'Kylin';
+
+[CAL_DT]:
+LOAD WEEK_BEG_DT,CAL_DT;
+select * from KYLIN_CAL_DT;
+
+[SALES]:
+LOAD PART_DT,LEAF_CATEG_ID,LSTG_SITE_ID,LSTG_FORMAT_NAME,PRICE,
+   SELLER_ID,MIN_PRICE_,MAX_PRICE_,COUNT__, COUNT_DISTINCT_SELLER_ID_,
+   COUNT_DISTINCT_LSTG_FORMAT_NAME_;
+select * from KYLIN_SALES;
+
+[CATEGORY]:
+LOAD USER_DEFINED_FIELD1,USER_DEFINED_FIELD3,UPD_DATE,UPD_USER
+  ,LEAF_CATEG_ID,SITE_ID,META_CATEG_NAME,CATEG_LVL2_NAME,CATEG_LVL3_NAME;
+select * from KYLIN_CATEGORY_GROUPINGS;
+
