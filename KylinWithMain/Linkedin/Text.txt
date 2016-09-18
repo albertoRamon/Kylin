@@ -1,0 +1,12 @@
+BI Tools and Apache Kylin
+
+https://github.com/albertoRamon/Kylin/tree/master/KylinWithMaster
+
+
+Apache Kylin is a powerful software which enables Extrem OLAP cubes on Hadoop system, with lineal scalability and sub-second response time over TB of data
+I studied the integration level ok Kylin with some BI Tools (Qlik, HUE, Tableau, Sisense, Caravel, ...)
+
+For any suggestions, feel free to contact me
+Thanks, Alberto
+
+
