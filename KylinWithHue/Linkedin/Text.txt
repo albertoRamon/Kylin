@@ -1,10 +1,11 @@
-* Apache Kylin:  is a OLAP (Cubes) over Hadoop using SQL
-
-* Apache HUE:  is a UI for most of Hadoop programms(Hive, HBase, Oozie, Phoenix, SolR, ...)
-
 Now we can use both together, you can test using this manual
-
 https://github.com/albertoRamon/Kylin/tree/master/KylinWithHue
 
+
+* Apache Kylin:  is a OLAP (Cubes) over Hadoop using SQL
+* Apache HUE:  is a UI for most of Hadoop programms(Hive, HBase, Oozie, Phoenix, SolR, ...)
+
+For any suggestions, feel free to contact me
+Thanks, Alberto
 
 Use Apache HUE with Kylin
