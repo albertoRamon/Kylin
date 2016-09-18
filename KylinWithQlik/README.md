@@ -7,13 +7,13 @@
 &nbsp;
 &nbsp;
 ### Intro
-It’s a new player in the BI tools world, with a high growth from 2013
+It’s a new player in the BI tools world, with a high growth since 2013
 
 [On-line demos](http://eu-a.demo.qlik.com/)
 
 Nowadays has connectors for Hadoop Databases: [Hive](https://hive.apache.org/index.html) and [Impala](http://impala.apache.org/)
 
-But doesn’t have Kylin connector
+But it doesn’t have Kylin a connector
 
 &nbsp;
 &nbsp;
@@ -27,19 +27,20 @@ But doesn’t have Kylin connector
 &nbsp;
 
 ### Pre-requisites
-A. We need an instance of Kylin, with a cube: [Quick Start with Sample Cube](http://kylin.apache.org/docs15/tutorial/kylin_sample.html), will be enough
-	You can check: 
+A. We need an instance of Kylin with a cube: [Quick Start with Sample Cube](http://kylin.apache.org/docs15/tutorial/kylin_sample.html) will be enough
+
+You can check it by lookin the name of the cube: 
 <p align="center">
   <img src=./Images/01.png />
 </p>
 
-B. Download Install and configure Kylin ODBC Driver
+B. Download, Install and configure Kylin ODBC Driver
   1. [Install Kylin ODBC](http://kylin.apache.org/docs15/tutorial/odbc.html)
   2. Add DNS System in Windows
 <p align="center">
   <img src=./Images/02.png />
 </p>
-  3. And configure: User-name /Password: ADMIN / KYLIN
+  3. Configure: User-name /Password: ADMIN / KYLIN
 <p align="center">
   <img src=./Images/03.png />
 </p>
@@ -57,7 +58,7 @@ Requires: [(System Requeriments)](https://help.qlik.com/en-US/sense/1.1/Subsyste
 
   Be careful with 64 bits and SP1, its mandatory
 
-  I tested on Windows 2012 and didn’t Work
+  I have tested it on Windows 2012 and didn’t Work
 * Framework .Net 4.5.2
 * 1.5 GB of free Disk Space
 
@@ -80,9 +81,9 @@ We launch the process **as Admin**:
 &nbsp;
 
 ### Issue 1:  The Burn engine cannot run with an MBA under the .NET 4
-(The [Qlik Forum](https://community.qlik.com/thread/158165) and msg txt wrongly suggests its about .NET problem)
+(The [Qlik Forum](https://community.qlik.com/thread/158165) and msg txt wrongly suggests that the problem is about .NET)
 
-In log you will see:
+In the log you will see:
 
     : Error 0x81f403e8: The Burn engine cannot run with an MBA under the .NET 4 CLR on Windows 7 RTM with .NET 4.5.2 (or greater) installed.
     [0070:0A8C][2016-09-09T22:34:33]i000: Loading prerequisite bootstrapper application because managed host could not be loaded, error: 0x81f403e8.
@@ -112,9 +113,9 @@ Open Qlik Desktop ![alt text](./Images/09.png)
 
 Create New App, With name Kylin ![alt text](./Images/10.png)
 
-Now, the complex is import your Kylin data into Qlik
+Now, the complex part is to import your Kylin data into Qlik
 
-I documented the fails, because I think are also important
+I documented the failures because I think they are also important
 
 &nbsp;
 ### Attempt 1: To add Data (fail)
@@ -127,7 +128,7 @@ We can see the Kylin’s tables:
   <img src=./Images/15.png />
 </p>
 
-Problem: The load **never finish** (I Waited 20 minutes)
+Problem: The load **never finishes** (I've Waited 20 minutes)
 
 See *"Issue 1: Qlik Metadata"*
 
@@ -140,29 +141,29 @@ The login and password can be empty
 
 An click on: ![alt text](./Images/21.png)
 
-Problem: The load **never finish**
+Problem: The load **never finished**
 
 See *"Issue 1: Qlik Metadata"*
 
 &nbsp;
 ### Attempt 3: Add Data (successful)
-We need configure our own data loader using a script
+We need to configure our own data loader using a script
 
-We change some configuration in parameters from connector created in *"Attempt 2: Add Data (fail)"*
+We change some configuration parameters from the connector created in *"Attempt 2: Add Data (fail)"*
 
-We will need activate debug mode: ![alt text](./Images/22.png)
+We will need to activate debug mode: ![alt text](./Images/22.png)
 
-And test default script with ![alt text](./Images/23.png) ,  you can see an execution step by step
+And test the default script with ![alt text](./Images/23.png) ,  The execution is execution step by step
 
 
 &nbsp;
 List of changes:
-* Change format to Dates to YYYY-MM-DD
+* Change Dates format to YYYY-MM-DD
 <p align="center">
   <img src=./Images/24.png />
 </p>
 
-* Add Connection String: You can add directly with ![alt text](./Images/25.png)
+* Add Connection String: You can add it directly with ![alt text](./Images/25.png)
 <p align="center">
   <img src=./Images/26.png />
 </p>
@@ -170,7 +171,7 @@ List of changes:
 * Load columns & data from tables
 
 &nbsp;
-First, we test query using Kylin UI:
+First, we test the query using Kylin UI:
 <p align="center">
   <img src=./Images/27.png />
 </p>
@@ -180,9 +181,9 @@ The result is: (731 rows)
   <img src=./Images/28.png />
 </p>
 
-(Note: We can use  ![alt text](./Images/28a.png) to copy the name of columns)
+(Note: We can use  ![alt text](./Images/28a.png) to copy the name of the columns)
 
-The result must be similar to this:  (See “[script_data_1.txt](script_data_1.txt)”, on gitHub)
+The result must be similar to:  (See “[script_data_1.txt](script_data_1.txt)”, on gitHub)
 <p align="center">
   <img src=./Images/29.png />
 </p>
@@ -196,27 +197,27 @@ We can test the import:
    Now, “Load data” button must be enabled: ![alt text](./Images/32.png)
 
 
-The Output must be similar to: (check the row count is the same like Kylin UI)
+The Output must be similar to: (check that the row count is the same as in the Kylin UI)
 <p align="center">
   <img src=./Images/33.png />
 </p>
 
-To Import other table (fact table) you only need add:
+To Import other table (fact table) you only need to add:
 
     LOAD PART_DT,LEAF_CATEG_ID,LSTG_SITE_ID,LSTG_FORMAT_NAME,PRICE,
     SELLER_ID,MIN_PRICE_,MAX_PRICE_,COUNT__, COUNT_DISTINCT_SELLER_ID_,
     COUNT_DISTINCT_LSTG_FORMAT_NAME_;
     select * from KYLIN_SALES;
 
-We can put “alias” to data easy:
+Data can be selected under an “alias”:
 
     [CAL_DT]:
     LOAD WEEK_BEG_DT,CAL_DT;
     select * from KYLIN_CAL_DT;
 
-The final load scripts is “[script_data_2.txt](script_data_2.txt)”, on gitHub
+The final load scripts are in“[script_data_2.txt](script_data_2.txt)”, on gitHub
 
-In my Hard: a Laptop with HBase, Kylin, Hive .. In a Docker Container and Qlik in a Virtual Box, the performance to ingest data has been good, only 2 sec for 3 Tables and 10K Rows
+In my Hardware: a Laptop with HBase, Kylin, Hive .. inside a Docker Container, and Qlik is inside a Virtual Box, the performance to ingest data has been good, only 2 sec for 3 Tables and 10K Rows
 <p align="center">
   <img src=./Images/34.png />
 </p>
@@ -226,7 +227,7 @@ We can see all ingested tables in “[data manager](https://help.qlik.com/en-US/
   <img src=./Images/37.png />
 </p>
 
-NOTE that: If you try to see data of one table: Click in one, you **can’t see data** (below)
+NOTE: If you try to see data of one table: Click in one,  **you aren’t able to  see data from one table** (below)
 
    “Data tables defined in the load script are not managed in Data manager”
 <p align="center">
@@ -240,7 +241,7 @@ NOTE that: If you try to see data of one table: Click in one, you **can’t see 
 ### Issue 1: Qlik Metadata
 The log of ODBC kylin are in: ![alt text](./Images/40.png)
 
-When use Attempt 1 and 2, we can see errors: **SQLGetInfoW**
+When use Attempt 1 and 2 are used, we can see sine errors: **SQLGetInfoW**
 <p align="center">
   <img src=./Images/41.png />
 </p>
@@ -248,29 +249,31 @@ When use Attempt 1 and 2, we can see errors: **SQLGetInfoW**
 &nbsp;
 ## Define Table associations
 ([Managing data associations](https://help.qlik.com/en-US/sense/3.0/Subsystems/Hub/Content/LoadData/associating-data.htm))
-You can see you actual table associations in:
+
+You can see the actual table associations in:
 <p align="center">
   <img src=./Images/42.png />
 </p>
 
-But this  association isn’t correct, you can see the corrects in Kylin UI > Model designer > Data Model:
+But this  association isn’t correct, you can see the correct ones  in Kylin UI > Model designer > Data Model:
 <p align="center">
   <img src=./Images/43.png />
 </p>
 
-How can I change? :
-   In “data manager”:  ![alt text](./Images/44.png) >  ![alt text](./Images/45.png) >  ![alt text](./Images/46.png)
+How can I change it?:
 
-   In true, you can’t change because
+  In “data manager”:  ![alt text](./Images/44.png) >  ![alt text](./Images/45.png) >  ![alt text](./Images/46.png)
 
-   “*Data tables defined in the load script are not managed in Data manage*r”
+  In true, you can’t change because
+
+  “*Data tables defined in the load script are not managed in Data manage*r”
 
 &nbsp;
 ## Create dataSheets
-There is only way to add data from load script into a sheet:
+There is only one way to add data from load script into a sheet:
 In “data manager”: ![alt text](./Images/47.png)  > ![alt text](./Images/48.png)  > ![alt text](./Images/49.png)  > Edit Sheet
 
-You can see all Columns in: ![alt text](./Images/50.png) , you can classifies like  Dim or measures with Right click
+You can see all Columns in: ![alt text](./Images/50.png) , you can classifies them like  Dim or measures with Right click
 
 Also, you can define a Hierarchy in Dim:
 <p align="center">
@@ -293,10 +296,10 @@ You can View the result from main menu:
 &nbsp;
 
 ## Future Work
-* Load data using “**load script**” is a workaround to read data from Apache Kylin, but like data isnt’t controlled by **Data Manage**r you can’t use the preview of data ([manual  reference](https://help.qlik.com/en-US/sense/3.0/Subsystems/Hub/Content/LoadData/data-management.htm)) ([Qlik Community](https://community.qlik.com/thread/206922))
-* Same problem with “**associations**”, you can’t manage/change because this data aren’t managed  by **Data Manager**
+* Load data using “**load script**” is a workaround to read data from Apache Kylin, but like the data isnt’t controlled by **Data Manage**r you can’t use the preview of data ([manual  reference](https://help.qlik.com/en-US/sense/3.0/Subsystems/Hub/Content/LoadData/data-management.htm)) ([Qlik Community](https://community.qlik.com/thread/206922))
+* Same problem with “**associations**”, you can’t manage/change them because this data isn’t managed  by **Data Manager**
 
-This problems means, if your automatic associations aren’t correct, **the data results will be false**
+This problems means that if your automatic associations aren’t correct, **the data results will be false**
 
 &nbsp;
 &nbsp;

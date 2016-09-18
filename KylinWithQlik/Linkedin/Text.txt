@@ -3,7 +3,7 @@ https://github.com/albertoRamon/Kylin/tree/master/KylinWithQlik
 
 
 * Apache Kylin:  is a OLAP (Cubes) over Hadoop using SQL
-* Apache Qlik: is BI and visutalization tool
+* Qlik: is BI and visutalization tool
 
 For any suggestions, feel free to contact me
 Thanks, Alberto
