@@ -13,7 +13,7 @@ We can use [Quick Start with Sample Cube ](http://kylin.apache.org/docs15/tutori
 &nbsp;
 &nbsp;
 ## Pre-requisites
-The First, you need Build Kylin Cube: [Quick Start with Sample Cube](http://kylin.apache.org/docs15/tutorial/kylin_sample.html "Build Instructions"): With Step 5, you can check the result cube Executing:
+First, you need Build Kylin Cube: [Quick Start with Sample Cube](http://kylin.apache.org/docs15/tutorial/kylin_sample.html "Build Instructions"): With firth step of link, you can check the result cube Executing:
 
 &nbsp;&nbsp;&nbsp;*select part_dt, sum(price) as total_selled, count(distinct seller_id) as sellers from kylin_sales group by part_dt order by part_dt*
 
@@ -67,12 +67,12 @@ Second, Install [Tableau Desktop 9.3.3](http://www.tableau.com/products/desktop/
 
 10. Click on ![alt text](./Images/10.png) > ![alt text](./Images/11.png) > ![alt text](./Images/12.png) (In **magnifying glass**)
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The result must be, three new tables (on left panel):
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The result must be three new tables (on left panel):
 <p align="center">
   <img src=./Images/13.png />
 </p>
 
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOTE: Sometimes it doesn’t work fine,, Solution: close and open Tableau  :)
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NOTE: Sometimes it doesn’t work correctly, Solution: close and open Tableau  :)
 
 11. Add this tables to Tableau: Drag and Drop to ![alt text](./Images/14.png)
 
@@ -86,7 +86,7 @@ Second, Install [Tableau Desktop 9.3.3](http://www.tableau.com/products/desktop/
   <img src=./Images/16.png />
 </p>
 
-* Now the same with “Kylin_Category_Groupings”
+* Now do the same with “Kylin_Category_Groupings”
 <p align="center">
   <img src=./Images/17.png />
 </p>
@@ -97,7 +97,7 @@ Second, Install [Tableau Desktop 9.3.3](http://www.tableau.com/products/desktop/
 </p>
 
 
-* Now if you click:![alt text](./Images/19.png) , you must see data table:
+* Now if you click:![alt text](./Images/19.png) , you must see this data table:
 <p align="center">
   <img src=./Images/20.png />
 </p>
@@ -143,29 +143,30 @@ The result must be similar to:
 &nbsp;
 ## Second Worksheet
 Create new Worksheet ![alt text](./Images/29.png)
-Drag and Drop:
+
+Drag and Drop, and configure if us follows:
 <p align="center">
   <img src=./Images/30.png />
 </p>
 
-After than we can see the relations between  “Meta Categ Name”,  "L2" and "L3":
+Then we can see the relations between  “Meta Categ Name”,  "L2" and "L3":
 <p align="center">
   <img src=./Images/31.png />
 </p>
 
-Delete 3 the three fields in “Rows” and generate a hierarchy:  using Dimensions Menu (Left side) Drag and Drop “Lvl2” over “Meta Categ Name” and after D & Drop “Lvl3”, the result must be:
+Delete 3 the three fields in “Rows” and generate a hierarchy using Dimensions Menu (on the Left) Drag and Drop “Lvl2” over “Meta Categ Name” and after D & Drop “Lvl3”, the new result must be:
 <p align="center">
   <img src=./Images/32.png />
 </p>
 
-Drag and Drop the New hierarchy on “Rows” and expands
+Drag and Drop the New hierarchy on “Rows” and expand it
 <p align="center">
   <img src=./Images/33.png />
 </p>
 
 Change the diagram type to table: ![alt text](./Images/34.png)
 
-Drag and Drop “Price” to Rows, and see total at right of table:
+Drag and Drop “Price” to Rows, and watch the total price on th right hand side of table:
 <p align="center">
   <img src=./Images/35.png />
 </p>
@@ -181,7 +182,7 @@ Now you can change the graph type:![alt text](./Images/36.png)
 ## Create Dashboard
 Create New Dashboard ![alt text](./Images/38.png)
 
-Drag and Drop WorkSheet_1 and WorkSheet_2
+Drag and Drop WorkSheet_1 and WorkSheet_2 to the new dashboard
 <p align="center">
   <img src=./Images/39.png />
 </p>
@@ -190,11 +191,11 @@ Drag and Drop WorkSheet_1 and WorkSheet_2
 ## Add filter to dashboard
 1º Add Filter to Worksheet_1 : ![alt text](./Images/40.png)
 
-2º Configure the filter like “All Using this Data Source” ![alt text](./Images/41.png)
+2º Configure the filter with using “All Using this Data Source” ![alt text](./Images/41.png)
 
-3º Then check the Worksheet_2 and we will see a new filter has been append: ![alt text](./Images/42.png)
+3º Then check the Worksheet_2 and we will see that a new filter has been append: ![alt text](./Images/42.png)
 
-4º Add filter to dashboard: Select a Worksheet on Dashboard, and right- click on upper edge ![alt text](./Images/43.png)
+4º Add the filter to the dashboard: Select a Worksheet on the Dashboard, and right- click on upper edge ![alt text](./Images/43.png)
 
 Filter > “Cal Dt”
 <p align="center">
@@ -202,12 +203,12 @@ Filter > “Cal Dt”
 </p>
 &nbsp;
 
-After that  a new right panel will appear: ![alt text](./Images/45.png) ,this filter will be affect on all Dashboard’s Worksheet
+After that  a new  panel will appear on the right: ![alt text](./Images/45.png) ,this filter will affect  all the Dashboard’s Worksheets
 
-Furthermore, you can filter by date, clicking in month, on upper worksheet ![alt text](./Images/46.png)
+Furthermore, you can filter by date clicking on month, in the upper worksheet ![alt text](./Images/46.png)
 
 &nbsp;
-Or, you can filter by category, clicking in category too ![alt text](./Images/47.png)
+Or, you can filter by category, clicking in category: ![alt text](./Images/47.png)
 
 &nbsp;
 &nbsp;
