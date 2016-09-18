@@ -5,7 +5,8 @@ Webs:
   http://172.17.0.2:8080	Ambari 	admin / admin
   http://172.17.0.2:7070/kylin	ADMIN / KYLIN
 
-   docker exec 89 bash
+   docjer start 89
+   docker exec -it 89 bash
 	
 
 Versiones
@@ -13,6 +14,7 @@ Versiones
   HDFS 2.6.0
   Zookeeper 3.4.6
   CentOS release 6.6
+  Kylin 1.5.2
 
 Creamos la imagen Docker
   sudo docker build -t albertozgz/kylin151:01 -f Dockerfile .
