@@ -80,6 +80,7 @@ Soft | Data Import | Data Integration | Detailed Manual | Version | License
 + This type of data have some limits:
   + You can't see the data preview
   + The associations (between tables are automatically made), you can’t change. This means if they aren’t correct, your results will be worng
++ [Technical Support](https://community.qlik.com/thread/232345)
 
 &nbsp;
 ## Kylin Carabel
@@ -105,6 +106,8 @@ I tried to import data using their automatic mode, and writing select queries. I
 In logs, I saw some data convesion errors / overflows
 
 You can see [this video](https://www.youtube.com/watch?v=v9of5N3TcTw)
+
+[Kylin MailList](http://mail-archives.apache.org/mod_mbox/kylin-user/201609.mbox/browser)
 
 &nbsp;
 &nbsp;
