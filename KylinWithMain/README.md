@@ -107,7 +107,6 @@ In logs, I saw some data convesion errors / overflows
 
 You can see [this video](https://www.youtube.com/watch?v=v9of5N3TcTw)
 
-[Kylin MailList](hhttp://mail-archives.apache.org/mod_mbox/kylin-user/201609.mbox/%3CCAF7etT%3DwSW1KqVqooYuYTvbKyx3njDH2E5wFSwQGie6jDVQm9g%40mail.gmail.com%3E)
 
 &nbsp;
 &nbsp;
