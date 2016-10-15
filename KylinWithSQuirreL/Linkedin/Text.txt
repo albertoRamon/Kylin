@@ -1,0 +1,11 @@
+
+https://github.com/albertoRamon/Kylin/KylinWithSQuirreL
+
+
+* Apache Kylin:  is a OLAP (Cubes) over Hadoop using SQL
+* SQuirreL: is a generic SQL Client
+
+For any suggestions, feel free to contact me
+Thanks, Alberto
+
+Use SQuirreL with Apache Kylin
