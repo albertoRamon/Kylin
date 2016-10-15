@@ -1,5 +1,6 @@
 
-https://github.com/albertoRamon/Kylin/KylinWithSQuirreL
+
+https://github.com/albertoRamon/Kylin/tree/master/KylinWithSQuirreL
 
 
 * Apache Kylin:  is a OLAP (Cubes) over Hadoop using SQL
