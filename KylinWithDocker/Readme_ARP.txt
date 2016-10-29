@@ -16,6 +16,7 @@ Versiones
   CentOS release 6.6
   Kylin 1.5.2
 
+INSTALL:
 Creamos la imagen Docker
   sudo docker build -t albertozgz/kylin151:01 -f Dockerfile .
 
@@ -23,8 +24,15 @@ Deployamos los containers
   source ambari-functions
   kylin-deploy-cluster 1
   check ambari, en especial HBase
+Hay que construir el cubo, seguir las instrucciones de la Web
+    no hace falta importar datos si se usa esta docker imagen
+    tarda en arrancar, se queda como trabajo en pendiente como 30 secs
+    
+
+Si no arranca Kylin
   check kylin, si no responde /usr/local/apache-kylin-1.5.2.1-bin/bin/kylin.sh start
   Los errores de arranque de Kylin estan en: /usr/local/apache-kylin-1.5.2.1-bin/logs/kylin.log
+  
 
 
 Check deploy problems in:  /var/log/kylin-deploy.log
