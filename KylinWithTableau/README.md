@@ -1,6 +1,8 @@
 # Use Tableau with Apache Kylin
 **Date:** August 2016
 
+**Updated:** Nov 2016
+
 **Author:** Ramón Portolés, Alberto  ![alt text](./Images/00.png)   [Linkedin](https://www.linkedin.com/in/alberto-ramon-portoles-a02b523b "My Linkedin")  		
 
 ## Intro
@@ -31,6 +33,8 @@ Second, Install [Tableau Desktop 9.3.3](http://www.tableau.com/products/desktop/
 + [Kylin: 1.5.2](http://kylin.apache.org/download/ "Download")
 + [Kylin ODBC 1.5](http://kylin.apache.org/docs15/tutorial/odbc.html "Download") (Don’t use v1.3, don’t work)
 + [Tableau Desktop 9.3.3](http://www.tableau.com/products/desktop/download "Download")
+
+**(Update Nov 2016)** Testet with Kylin 1.6.0 and Tableau Desktop 10.1.1 and work without problems. If you use the twb files from my GitHub, you will be prompted  for  convert to a new version (and you will not open this file with previous versions)
 
 &nbsp;
 &nbsp;
