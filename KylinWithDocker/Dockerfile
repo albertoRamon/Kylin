@@ -15,4 +15,4 @@ ADD kylin-multinode.json /tmp/
 ADD wait-for-kylin.sh /tmp/
 ADD deploy.sh /usr/local/kylin/deploy.sh
 
-EXPOSE 7070 16010 50070	19888 8080
+EXPOSE 7070 16010 50070	19888 8080 60010

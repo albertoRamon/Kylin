@@ -1,12 +1,23 @@
 wget https://raw.githubusercontent.com/sequenceiq/docker-kylin/master/ambari-functions
 source ambari-functions/
 
+
+Start Docker
+   docker ps -a
+   docker start 14
+   docker exec -it 14 bash
+
+Start Kylin
+  check kylin, si no responde 
+    /usr/local/apache-kylin-1.5.2.1-bin/bin/kylin.sh start
+    /usr/local/apache-kylin-1.6.0-SNAPSHOT-bin/bin/kylin.sh start
+	/usr/local/apache-kylin-1.6.0-bin/bin/kylin.sh start
+  Los errores de arranque de Kylin estan en: /usr/local/apache-kylin-1.5.2.1-bin/logs/kylin.log
+
 Webs:
   http://172.17.0.2:8080	Ambari 	admin / admin
   http://172.17.0.2:7070/kylin	ADMIN / KYLIN
-
-   docjer start 89
-   docker exec -it 89 bash
+  Si ambari no responde: ambari-agent stop
 	
 
 Versiones
@@ -15,6 +26,8 @@ Versiones
   Zookeeper 3.4.6
   CentOS release 6.6
   Kylin 1.5.2
+
+
 
 INSTALL:
 Creamos la imagen Docker
@@ -27,12 +40,6 @@ Deployamos los containers
 Hay que construir el cubo, seguir las instrucciones de la Web
     no hace falta importar datos si se usa esta docker imagen
     tarda en arrancar, se queda como trabajo en pendiente como 30 secs
-    
-
-Si no arranca Kylin
-  check kylin, si no responde /usr/local/apache-kylin-1.5.2.1-bin/bin/kylin.sh start
-  Los errores de arranque de Kylin estan en: /usr/local/apache-kylin-1.5.2.1-bin/logs/kylin.log
-  
 
 
 Check deploy problems in:  /var/log/kylin-deploy.log
@@ -41,7 +48,11 @@ ToDo:  Use root for deploy Kylin --> Need be root to execute --> Root isn't supe
 	ERROR: AccessControlException: Permission denied: user=root, access=WRITE, inode="/kylin":hdfs:hdfs:drwxr-xr-x
 	temporal solution: runuser -l hdfs -c "hadoop fs -chmod -R 777 /kylin"
 	
-Si ambari no responde: ambari-agent stop
+UPGRADE KILYN
+  Download correct version for HBase
+  tar -xvzf 
+  docker cp apache-kylin-1.6.0-SNAPSHOT-bin 14:/usr/local/
+  docker cp apache-kylin-1.6.0-bin 14:/usr/local/
 
 PORTs:
  Desconocidos
