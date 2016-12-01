@@ -12,7 +12,10 @@ Start Kylin
     /usr/local/apache-kylin-1.5.2.1-bin/bin/kylin.sh start
     /usr/local/apache-kylin-1.6.0-SNAPSHOT-bin/bin/kylin.sh start
 	/usr/local/apache-kylin-1.6.0-bin/bin/kylin.sh start
-  Los errores de arranque de Kylin estan en: /usr/local/apache-kylin-1.5.2.1-bin/logs/kylin.log
+  Acordarse de actualizar KYLIN_HOME, una solucion es que KYLIN_HOME sea un soft link y redireccionarlo
+  	cd /usr/local
+  	ln -sfn /usr/local/apache-kylin-1.6.0-bin kylin
+  Los errores de arranque de Kylin estan en: /usr/local/kylin/logs/kylin.log
 
 Webs:
   http://172.17.0.2:8080	Ambari 	admin / admin
