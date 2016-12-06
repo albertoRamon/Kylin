@@ -1,8 +1,8 @@
 FROM sequenceiq/ambari:1.7.0
 MAINTAINER SequenceIQ
 
-RUN curl -sL https://dist.apache.org/repos/dist/release/kylin/apache-kylin-1.5.2.1/apache-kylin-1.5.2.1-bin.tar.gz | tar -xz -C /usr/local
-RUN cd /usr/local && ln -s ./apache-kylin-1.5.2.1-bin kylin
+RUN curl -sL http://apache.rediris.es/kylin/apache-kylin-1.6.0/apache-kylin-1.6.0-bin.tar.gz | tar -xz -C /usr/local
+RUN cd /usr/local && ln -s ./apache-kylin-1.6.0-bin kylin
 ENV KYLIN_HOME=/usr/local/kylin
 
 RUN yum install -y pig hbase tez hadoop snappy snappy-devel hadoop-libhdfs ambari-log4j hive hive-hcatalog hive-webhcat webhcat-tar-hive webhcat-tar-pig mysql-connector-java mysql-server

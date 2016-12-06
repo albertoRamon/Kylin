@@ -12,9 +12,7 @@ Start Kylin
     /usr/local/apache-kylin-1.5.2.1-bin/bin/kylin.sh start
     /usr/local/apache-kylin-1.6.0-SNAPSHOT-bin/bin/kylin.sh start
 	/usr/local/apache-kylin-1.6.0-bin/bin/kylin.sh start
-  Acordarse de actualizar KYLIN_HOME, una solucion es que KYLIN_HOME sea un soft link y redireccionarlo
-  	cd /usr/local
-  	ln -sfn /usr/local/apache-kylin-1.6.0-bin kylin
+
   Los errores de arranque de Kylin estan en: /usr/local/kylin/logs/kylin.log
 
 Webs:
@@ -34,11 +32,13 @@ Versiones
 
 INSTALL:
 Creamos la imagen Docker
+  cd ~/GitHub/Kylin_ARP/KylinWithDocker/
   sudo docker build -t albertozgz/kylin151:01 -f Dockerfile .
 
 Deployamos los containers
+  (Remove previous containers if there is)
   source ambari-functions
-  kylin-deploy-cluster 1
+  kylin-deploy-cluster 1  #and wait (see rigth upper corn the % )
   check ambari, en especial HBase
 Hay que construir el cubo, seguir las instrucciones de la Web
     no hace falta importar datos si se usa esta docker imagen
@@ -51,11 +51,18 @@ ToDo:  Use root for deploy Kylin --> Need be root to execute --> Root isn't supe
 	ERROR: AccessControlException: Permission denied: user=root, access=WRITE, inode="/kylin":hdfs:hdfs:drwxr-xr-x
 	temporal solution: runuser -l hdfs -c "hadoop fs -chmod -R 777 /kylin"
 	
-UPGRADE KILYN
+UPGRADE KILYN (runing container)
   Download correct version for HBase
   tar -xvzf 
   docker cp apache-kylin-1.6.0-SNAPSHOT-bin 14:/usr/local/
   docker cp apache-kylin-1.6.0-bin 14:/usr/local/
+  
+  Acordarse de actualizar KYLIN_HOME, una solucion es que KYLIN_HOME sea un soft link y redireccionarlo
+  	cd /usr/local
+  	ln -sfn /usr/local/apache-kylin-1.6.0-bin kylin
+	
+UPGRADE KYLIN (wich deploy with container)
+	Update DockerFile (x 2Lines)
 
 PORTs:
  Desconocidos
