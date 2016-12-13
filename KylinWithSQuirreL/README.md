@@ -2,6 +2,8 @@
 
 **Date:** October 2016
 
+**Update:** Dicember 2016
+
 **Author:** Ramón Portolés, Alberto  ![alt text](./Images/00.png)  [Linkedin](https://www.linkedin.com/in/alberto-ramon-portoles-a02b523b "My Linkedin") 
 
 &nbsp;
@@ -12,7 +14,8 @@ You can use it to access HBase + Phoenix and Hive
 
 &nbsp;
 ### Used Software
-* [Kylin v1.5.2](http://kylin.apache.org/download/)
+* [Kylin v1.5.2](http://kylin.apache.org/download/) & ODBC 1.5
+*  Update Dic 2016: Kylin 1.6.0 & ODBC 1.6 Works OK
 * [SquirreL SQL v3.7.1](http://www.squirrelsql.org/)
 
 &nbsp;
