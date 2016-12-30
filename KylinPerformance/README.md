@@ -90,6 +90,7 @@ The time in three first steps (Flat Table) has been improved to the half  :)
 &nbsp;
 ## Cube_06: Fail
 If we see the distribution of rows:
+
 Table | Rows
 --- | --- 
 Fact Table | 3.900.00 
