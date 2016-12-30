@@ -1,5 +1,5 @@
 # Example of Tuning Cube I/II
-**Date:** Dic 2016
+**Date:** Dec 2016
 
 **Author:** Ramón Portolés, Alberto  ![alt text](./Images/00.png) &nbsp; &nbsp; &nbsp; &nbsp;  [Linkedin](https://www.linkedin.com/in/alberto-ramon-portoles-a02b523b "My Linkedin")  		
 
@@ -151,7 +151,7 @@ The problem is didn’t use partitions to generate several Mappers
 
 
 # Example of Tuning Cube II
-**Date:**  Dicember 2016
+**Date:**  Dec 2016
 
 **Author:** Ramón Portolés, Alberto  ![alt text](./Images/00.png)   [Linkedin](https://www.linkedin.com/in/alberto-ramon-portoles-a02b523b "My Linkedin")  		
  		
