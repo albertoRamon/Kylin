@@ -267,7 +267,7 @@ Where is the problem? Our problem is that I starter 4 mappers, but each mapper n
 
 * The solution 1:  add more RAM to YARN 
 * The solution 2:  add more Reduce the number to vCores
-* The solution 3: You can play with max RAM to YARN by node  (yarn.nodemanager.resource.memory-mb) and min RAM to container (yarn.scheduler.minimum-allocation-mb). If you increase minimum RAM per container, YARN will reduce the numbers of maps in 
+* The solution 3: You can play with max RAM to YARN by node  (yarn.nodemanager.resource.memory-mb) and min RAM to container (yarn.scheduler.minimum-allocation-mb). If you increase minimum RAM per container, YARN will reduce the numbers of maps
 <p align="center">
   <img src=./Images/27.png />
 </p>
