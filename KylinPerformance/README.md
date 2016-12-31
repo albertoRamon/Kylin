@@ -157,7 +157,6 @@ The problem is didn’t use partitions to generate several Mappers
  		
 &nbsp;
 ## Tuning of M-R Map-Reduce
-After tuning of M-R Map-Reduce
 After tuning of cube: 
 
 (See KylinPerformance_I)
