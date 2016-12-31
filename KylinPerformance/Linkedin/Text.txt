@@ -1,0 +1,4 @@
+Example of Tuning Cube I/II
+
+I wrote some tech notes about how to improve the performance of Apache Kylin 
+https://github.com/albertoRamon/Kylin/tree/master/KylinPerformance
