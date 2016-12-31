@@ -238,7 +238,7 @@ See comments about this from [Shaofengshi in MailList](http://apache-kylin.74782
 </p>
 In this case the **72%** of time is used to Build Cube
 
-This step is a MapReduce task, you can see the Sql Hive of these steps on ![alt text](./Images/23.png) > ![alt text](./Images/24.png) 
+This step is a MapReduce task, you can see the YARN log of these steps on ![alt text](./Images/23.png) > ![alt text](./Images/24.png) 
 
 &nbsp;
 ### Attempt1:
