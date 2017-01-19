@@ -37,11 +37,13 @@ For our test use : Use [Kylin v1.5.2](http://kylin.apache.org/download/) (on doc
 ### Resume Table
 Soft | Data Import | Data Integration | Detailed Manual | Version | License
 --- | --- | --- | --- | --- | ---
-[Tableau Desktop](http://www.tableau.com/products/desktop/download) | ![alt text](./Images/S3.png) | ![alt text](./Images/S3.png) | [GitGub](https://github.com/albertoRamon/Kylin/tree/master/KylinWithTableau) | v9.3.3 | Free
-[Apache HUE](http://gethue.com/) | ![alt text](./Images/S3.png) | ![alt text](./Images/S1.png) | [GitGub](https://github.com/albertoRamon/Kylin/tree/master/KylinWithHue) | v3.10 | GPL 
-[Qlik Desktop](http://www.qlik.com/us/products/qlik-sense/desktop) | ![alt text](./Images/S3.png) | ![alt text](./Images/S2.png) | [GitGub](https://github.com/albertoRamon/Kylin/tree/master/KylinWithQlik) | v3.0.2.0 | Free
-[SQuirreL](http://www.squirrelsql.org/)  | ![alt text](./Images/S3.png) | ![alt text](./Images/S3.png) | [GitGub](https://github.com/albertoRamon/Kylin/tree/master/KylinWithSQuirreL) | v3.7.1 | GPL
-[Kylin Carabel](https://github.com/rocky1001/caravel) | ![alt text](./Images/S0.png) | ![alt text](./Images/S0.png) | Internal* | v0.91 | GPL
+[Tableau Desktop](http://www.tableau.com/products/desktop/download) | ![alt text](./Images/S3.png) | ![alt text](./Images/S3.png) | [GitHub](https://github.com/albertoRamon/Kylin/tree/master/KylinWithTableau) | v9.3.3 | Free
+[Apache HUE](http://gethue.com/) | ![alt text](./Images/S3.png) | ![alt text](./Images/S1.png) | [GitHub](https://github.com/albertoRamon/Kylin/tree/master/KylinWithHue) | v3.10 | GPL 
+[Qlik Desktop](http://www.qlik.com/us/products/qlik-sense/desktop) | ![alt text](./Images/S3.png) | ![alt text](./Images/S2.png) | [GitHub](https://github.com/albertoRamon/Kylin/tree/master/KylinWithQlik) | v3.0.2.0 | Free
+[SQuirreL](http://www.squirrelsql.org/)  | ![alt text](./Images/S3.png) | ![alt text](./Images/S3.png) | [GitHub](https://github.com/albertoRamon/Kylin/tree/master/KylinWithSQuirreL) | v3.7.1 | GPL
+[Apache Zeppelin](https://zeppelin.apache.org/) | ![alt text](./Images/S3.png) | ![alt text](./Images/S3.png) | [External](http://zeppelin.apache.org/docs/0.7.0-SNAPSHOT/interpreter/kylin.html) | v0.7 | GPL
+[Apache Flink](https://flink.apache.org/) | ![alt text](./Images/S3.png) | ![alt text](./Images/S3.png) | [GitHub](https://github.com/albertoRamon/Flink/tree/master/ReadKylinFromFlink) | v1.2 | GPL
+[Kylin Caravel](https://github.com/rocky1001/caravel) | ![alt text](./Images/S0.png) | ![alt text](./Images/S0.png) | Internal* | v0.91 | GPL
 [Sisense](https://www.sisense.com/) | ![alt text](./Images/S0.png) | ![alt text](./Images/S0.png) | Internal* | v6.4.1 | Demo
 [Microsoft PowerBI](https://powerbi.microsoft.com/en-us/) | ![alt text](./Images/S0.png) | ![alt text](./Images/S0.png) | N.A | v2.38.4491 | Free
 [Dundas BI](http://www.dundas.com/) | ![alt text](./Images/S0.png) | ![alt text](./Images/S0.png) | N.A | v3.0.2.100 | Demo
@@ -100,7 +102,23 @@ Not use ODBC driver uses JDBC directly then:
 * The version of Kylin and JDBC must be the same (upgrade Kylin implies upgrade your Java lib)
 
 &nbsp;
-## Kylin Carabel
+## Apache Zeppelin
+[Apache Kylin Interpreter for Apache Zeppelin](http://zeppelin.apache.org/docs/0.7.0-SNAPSHOT/interpreter/kylin.html)
+
+[Apache Zeppelin](https://zeppelin.apache.org/)  is Web notebook very useful for generate dynamic reports which integrate data from differents datasources (Hive, Spark, Kylin, Flink, PostgreSQL, HBase, .. )
+
+You can found exaples in [ZeppelinHub](https://www.zeppelinhub.com/viewer) and [Hortonworks Zeppelin Gallery](https://github.com/hortonworks-gallery/zeppelin-notebooks)
+
+&nbsp;
+## Apache Flink
+[View full Report](https://github.com/albertoRamon/Flink/tree/master/ReadKylinFromFlink)
+
+[Apache Flink](https://flink.apache.org/)  is a Framework to process data in batch or streaming mode
+
+Now we can read Kylin’s data from Apache Flink, Flink 1.2 or higger is recomended
+
+&nbsp;
+## Kylin Caravel
 [Caravel](https://github.com/airbnb/caravel) is a UI for data exploration, developed by [Airbnb](https://www.airbnb.com/),  that uses  [Druid](http://druid.io/), as database
 [Rocky Qi](https://github.com/rocky1001?tab=overview&from=2016-08-01&to=2016-08-31&utf8=%E2%9C%93) (thanks, for the suggestions) creates a fork [Kylin – Caravel](https://github.com/rocky1001/caravel), to support Kylin as database 
 
@@ -188,7 +206,7 @@ DataIku, don’t support standard ODBC connector, the workaround is test with un
 
 &nbsp;
 ## ToDo:
-Test and doc the integration of Kylin with [Saiku](http://www.meteorite.bi/products/saiku) and [Zeppelin](https://github.com/apache/zeppelin/tree/master/kylin)
+Test and doc the integration of Kylin with [Saiku](http://www.meteorite.bi/products/saiku)
 
 &nbsp;
 &nbsp;
