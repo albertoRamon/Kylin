@@ -1,3 +1,4 @@
+# !! Moved to [Official Doc](http://kylin.apache.org/docs16/) /  [Connect from SQuirreL](http://kylin.apache.org/docs16/tutorial/squirrel.html) !!
 # Use SQuirreL with Apache Kylin
 
 **Date:** October 2016
