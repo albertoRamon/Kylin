@@ -229,7 +229,7 @@ In Hue 3.10 and 3.11
 ### Future Work
 
 **Dashboards**
-There is an amazing feature of Hue: [Searh Dasboards](http://gethue.com/search-dashboards/) / [Dynamic Dashboards](http://gethue.com/hadoop-search-dynamic-search-dashboards-with-solr/). You can ‘play’ with this [Demo On-line](http://demo.gethue.com/search/admin/collections) … **But this only works with SolR**
+There is an amazing feature of Hue: [Search Dasboards](http://gethue.com/search-dashboards/) / [Dynamic Dashboards](http://gethue.com/hadoop-search-dynamic-search-dashboards-with-solr/). You can ‘play’ with this [Demo On-line](http://demo.gethue.com/search/admin/collections) … **But this only works with SolR**
 
 There is a Jira to solve this: [Hue 3228](https://issues.cloudera.org/browse/HUE-3228), is in RoadMap for 4.1. Check Hue MailList[MailList](https://groups.google.com/a/cloudera.org/forum/#!topic/hue-user/B6FWBeoqK7I)  and add Dashboards to JDBC connections
 
