@@ -1,12 +1,12 @@
 # Example of Tuning Cube
 **Date:** Dec 2016
 
-**Author:** Ramón Portolés, Alberto  ![alt text](./Images/00.png) &nbsp; &nbsp; &nbsp; &nbsp;  [Linkedin](https://www.linkedin.com/in/alberto-ramon-portoles-a02b523b "My Linkedin")  		
+**Author:** Ramón Portolés, Alberto  ![alt text](./Images/00.png)      [Linkedin](https://www.linkedin.com/in/alberto-ramon-portoles-a02b523b "My Linkedin")  		
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Thanks to ShaoFeng Shi for help*
+ *Thanks to ShaoFeng Shi for help*
 
-&nbsp;
-&nbsp;
+
+
 
 Try to optimize a very simple Cube, with 1 Dim and 1 Fact table (Date Dimension)
 <p align="center">
@@ -22,7 +22,7 @@ The baseline is:
 
 With this configuration, the results are: 13 min to build a cube of 20 Mb  (Cube_01)
 
-## Cube_02
+### Cube_02: Reduce cardinality
 To make the first improvement, use Joint and Hierarchy on Dimensions to reduce the cardinality.
 
 Put together all ID and Text of: Month, Week, Weekday and Quarter using Joint Dimension
@@ -34,7 +34,7 @@ Define Id_date and Year as a Hierarchy Dimension
 
 This reduces the size down to 0.72MB and time to 5 min
 
-&nbsp;
+
 
 [Kylin 2149](https://issues.apache.org/jira/browse/KYLIN-2149), ideally, these Hierarchies can be defined also:
 * Id_weekday > Id_date
@@ -44,19 +44,17 @@ This reduces the size down to 0.72MB and time to 5 min
 
 But for now, it isn’t possible to use Joint and hierarchy together in one Dim   :(
 
-&nbsp;
-## Cube_03
+
+### Cube_03: Compress output Cube
 To make the next improvement, compress HBase Cube with Snappy:
 
 ![alt text](./Images/03.png)
 
-&nbsp;
-## Cube_04
 Another option is to Now we can try compress HBase Cube with Gzip:
 
 ![alt text](./Images/04.png)
 
-&nbsp;
+
 
 The results of compression output are:
 
@@ -64,8 +62,8 @@ The results of compression output are:
 
 The difference between Snappy and Ggzip in time is less than 1% but in size it is 18%
 
-&nbsp;
-## Cube_05
+
+### Cube_04: Compress Hive table
 The time distribution is like this:
 <p align="center">
   <img src=./Images/06.png />
@@ -81,7 +79,7 @@ A lot of time is used in the first steps!
 
 This time distribution is typical in a cube with few measures and few dim (or very optimized)
 
-&nbsp;
+
 
 Try to use ORC Format and compression on Hive input table (Snappy):
 <p align="center">
@@ -116,8 +114,8 @@ Is a simple row count, two approximations can be made
 * See comments about this from Shaofengshi in MailList . In the future versions (Kylin 2265 v2.0), this steps will be implemented using Hive table statistics.
 
 
-&nbsp;
-## Cube_06: Fail
+
+### Cube_05: Partition Hive table (fail)
 The distribution of rows is:
 
 Table | Rows
@@ -170,8 +168,8 @@ The problem is that partitions were not used to generate several Mappers
 	
 (I checked this issue with ShaoFeng Shi. He thinks the problem is that there are few many rows and we are not working with a real Hadoop cluster. See this [tech note](http://kylin.apache.org/docs16/howto/howto_optimize_build.html)).
 	
-&nbsp;
-## Resume of results
+
+### Resume of results
 <p align="center">
   <img src=./Images/13.png />
 </p>
@@ -182,15 +180,15 @@ The tunning process has been:
 * Apply techniques of reduction of cardinality (Joint, Derived, Hierarchy and Mandatory)
 * Personalize Dim encoder for each Dim and choose the best order of Dim in Row Key
 
-&nbsp;
+
 
 Now, there are three types of cubes:
-* Cubes with low cardinality in their dimensions (Like cube 5, most of time is usend in flat table steps)
-* Cubes with high cardinality in their dimensions (Like cube 7,most of time is usend on Build cube, the flat table steps are lower than 10%)
+* Cubes with low cardinality in their dimensions (Like cube 4, most of time is usend in flat table steps)
+* Cubes with high cardinality in their dimensions (Like cube 6,most of time is usend on Build cube, the flat table steps are lower than 10%)
 * The third type, ultra high cardinality (UHC) which is outside the scope of this article
 
-&nbsp;
-## Cube 7: Cube with high cardinality Dimensions
+
+### Cube 6: Cube with high cardinality Dimensions
 <p align="center">
   <img src=./Images/22.png />
 </p>
@@ -239,9 +237,9 @@ During a normal “Build Cube” step you will see similars messages on YARN log
 
 If you don’t see this periodically, perhaps you have a bottleneck in the memory
 
-&nbsp;
 
-## Cube 8: Improve cube response time
+
+### Cube 7: Improve cube response time
 We can try to use different aggregations groups to improve the query performance of some very important Dim or a Dim with high cardinality.
 
 In our case we define 3 Aggregations Groups: 
@@ -269,8 +267,8 @@ Now it uses 3% more of time to build the cube and 0.6% of space, but queries by 
 
 
 
-&nbsp;
-&nbsp;
+
+
 
 **__For any suggestions, feel free to contact me__**
 
