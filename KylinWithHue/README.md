@@ -85,7 +85,7 @@ We will use Hue / Hue as login / pass
   <img src=./Images/04.png />
 </p>
 
-   It is a permission problem of your current user, you can use: sudo to start Hue  
+   It is a permission problem of your current user, you can use: sudo to start Hue
 
 **Issue 2:** Could not connect to … 
 <p align="center">
@@ -140,7 +140,7 @@ Choose **Binary** and the **correct version of Kylin and HBase**
 
  * If the code is downloaded from Git:  *UnzipPath/desktop/conf/pseudo-distributed.ini*
 
-  (I shared my *INI* file in GitHub)
+   (I shared my *INI* file in GitHub).
 
  * If you are using Cloudera: you must use Advanced Configuration Snippet
 
