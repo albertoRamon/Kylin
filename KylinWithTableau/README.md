@@ -132,12 +132,12 @@ To expand to Quarter and Months: Click on “Plus” of year: ![alt text](./Imag
   <img src=./Images/26.png />
 </p>
 
-We can add sub-totals  by category: Drag and Drop “Meta Categ Name” to “Color”
+To add sub-totals  by category: Drag and Drop “Meta Categ Name” to “Color”
 <p align="center">
   <img src=./Images/27.png />
 </p>
 
-The result must be similar to:
+The result should be similar to:
 <p align="center">
   <img src=./Images/28.png />
 </p>
@@ -145,24 +145,24 @@ The result must be similar to:
 &nbsp;
 &nbsp;
 ### Second Worksheet
-Create new Worksheet ![alt text](./Images/29.png)
+Create a new Worksheet ![alt text](./Images/29.png)
 
-Drag and Drop, and configure if us follows:
+Drag and Drop, and configure if as follows:
 <p align="center">
   <img src=./Images/30.png />
 </p>
 
-Then we can see the relations between  “Meta Categ Name”,  "L2" and "L3":
+Then the relations between  “Meta Categ Name”,  "L2" and "L3" can be seen:
 <p align="center">
   <img src=./Images/31.png />
 </p>
 
-Delete 3 the three fields in “Rows” and generate a hierarchy using Dimensions Menu (on the Left) Drag and Drop “Lvl2” over “Meta Categ Name” and after D & Drop “Lvl3”, the new result must be:
+Delete 3 the three fields in “Rows” and generate a hierarchy using Dimensions Menu (on the Left) Drag and Drop “Lvl2” over “Meta Categ Name” and after D & Drop “Lvl3”, the new result should be:
 <p align="center">
   <img src=./Images/32.png />
 </p>
 
-Drag and Drop the New hierarchy on “Rows” and expand it
+Drag and Drop the New hierarchy on “Rows” and expands it:
 <p align="center">
   <img src=./Images/33.png />
 </p>
@@ -182,8 +182,8 @@ Now you can change the graph type:![alt text](./Images/36.png)
 
 &nbsp;
 &nbsp;
-## Create Dashboard
-Create New Dashboard ![alt text](./Images/38.png)
+### Create a Dashboard
+Create a New Dashboard ![alt text](./Images/38.png)
 
 Drag and Drop WorkSheet_1 and WorkSheet_2 to the new dashboard
 <p align="center">
@@ -191,14 +191,14 @@ Drag and Drop WorkSheet_1 and WorkSheet_2 to the new dashboard
 </p>
 
 
-## Add filter to dashboard
+### Add filter to dashboard
 1º Add Filter to Worksheet_1 : ![alt text](./Images/40.png)
 
-2º Configure the filter with using “All Using this Data Source” ![alt text](./Images/41.png)
+2º Configure the filter using “All Using this Data Source” ![alt text](./Images/41.png)
 
-3º Then check the Worksheet_2 and we will see that a new filter has been append: ![alt text](./Images/42.png)
+3º Then check the Worksheet_2 and, as result a new filter has been added: ![alt text](./Images/42.png)
 
-4º Add the filter to the dashboard: Select a Worksheet on the Dashboard, and right- click on upper edge ![alt text](./Images/43.png)
+4º Add the filter to the dashboard: Select a Worksheet on the Dashboard, and right- click on the upper edge ![alt text](./Images/43.png)
 
 Filter > “Cal Dt”
 <p align="center">
@@ -206,12 +206,12 @@ Filter > “Cal Dt”
 </p>
 &nbsp;
 
-After that  a new  panel will appear on the right: ![alt text](./Images/45.png) ,this filter will affect  all the Dashboard’s Worksheets
+After that, a new  panel will appear on the right: ![alt text](./Images/45.png) ,This filter will affect  all the Dashboard’s Worksheets
 
 Furthermore, you can filter by date clicking on month, in the upper worksheet ![alt text](./Images/46.png)
 
 &nbsp;
-Or, you can filter by category, clicking in category: ![alt text](./Images/47.png)
+Or, you can filter by category by, clicking in category: ![alt text](./Images/47.png)
 
 &nbsp;
 &nbsp;
