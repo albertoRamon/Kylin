@@ -1,4 +1,4 @@
-# Use Qlik with Apache Kylin
+# Connect from Qlik
 
 **Date:** September 2016
 
@@ -27,9 +27,9 @@ But it doesn’t have Kylin a connector
 &nbsp;
 
 ### Pre-requisites
-A. We need an instance of Kylin with a cube: [Quick Start with Sample Cube](http://kylin.apache.org/docs15/tutorial/kylin_sample.html) will be enough
+A. An instance of Kylin with a cube: [Quick Start with Sample Cube](http://kylin.apache.org/docs15/tutorial/kylin_sample.html) will be enough
 
-You can check it by lookin the name of the cube: 
+Can be checked it by looking the name of the cube: 
 <p align="center">
   <img src=./Images/01.png />
 </p>
@@ -52,23 +52,23 @@ B. Download, Install and configure Kylin ODBC Driver
 &nbsp;
 &nbsp;
 
-## Install Qlik:
+### Install Qlik:
 Requires: [(System Requeriments)](https://help.qlik.com/en-US/sense/1.1/Subsystems/Desktop/Content/Introduction/InstallingDesktop.htm)
 * Windows 7 SP1 (64 bit) or 8.1 (64 bits)
 
   Be careful with 64 bits and SP1, its mandatory
 
-  I have tested it on Windows 2012 and didn’t Work
+  Has been tested it on Windows 2012 and didn’t work
 * Framework .Net 4.5.2
 * 1.5 GB of free Disk Space
 
-Note: The Language of Qlik Desktop is the same as your S.O. (you can change)
+Note: The Language of Qlik Desktop is the same as your S.O. (cann't be changed)
 
 My apologies for some pictures in Spanish language  ;)
 
 &nbsp;
 
-We launch the process **as Admin**:
+Launch the process **as Admin**:
 <p align="center">
   <img src=./Images/05.png />
 </p>
@@ -80,7 +80,7 @@ We launch the process **as Admin**:
 </p>
 &nbsp;
 
-### Issue 1:  The Burn engine cannot run with an MBA under the .NET 4
+**Issue 1:**  The Burn engine cannot run with an MBA under the .NET 4
 (The [Qlik Forum](https://community.qlik.com/thread/158165) and msg txt wrongly suggests that the problem is about .NET)
 
 In the log you will see:
@@ -94,7 +94,7 @@ Solution: Qlik requires SP1 of Windows 7 to install  ( this info Isn’t in the 
 [Download & Install SP1 64 bits](https://support.microsoft.com/en-us/help/15090/windows-7-install-service-pack-1-sp1)
 &nbsp;
 
-### Issue2: Microsoft .Net framework is required for Qlik Sense desktop setup
+**Issue2:** Microsoft .Net framework is required for Qlik Sense desktop setup
 <p align="center">
   <img src=./Images/08.png />
 </p>
@@ -103,7 +103,7 @@ And you **don’t have** a button “Accept and install”
 
 I tried Qlik [Community 1](https://community.qlik.com/thread/127287) and [Qlik Community 2](https://community.qlikview.com/thread/184710) , but didn’t work
 
-Solution: I deleted in windows registry all references to Qlik
+Solution: delete in windows registry all references to Qlik
 
 &nbsp;
 &nbsp;
@@ -115,7 +115,7 @@ Create New App, With name Kylin ![alt text](./Images/10.png)
 
 Now, the complex part is to import your Kylin data into Qlik
 
-I documented the failures because I think they are also important
+ The failures has been documented because they are also important
 
 &nbsp;
 ### Attempt 1: To add Data (fail)
@@ -123,7 +123,7 @@ I documented the failures because I think they are also important
 
 The login and password can be empty 
 
-We can see the Kylin’s tables: 
+See the Kylin’s tables: 
 <p align="center">
   <img src=./Images/15.png />
 </p>
@@ -147,11 +147,11 @@ See *"Issue 1: Qlik Metadata"*
 
 &nbsp;
 ### Attempt 3: Add Data (successful)
-We need to configure our own data loader using a script
+Configure our own data loader using a script needed
 
-We change some configuration parameters from the connector created in *"Attempt 2: Add Data (fail)"*
+Some configuration parameters from the connector created in *"Attempt 2: Add Data (fail)"* should be changed
 
-We will need to activate debug mode: ![alt text](./Images/22.png)
+Activate debug mode: ![alt text](./Images/22.png)
 
 And test the default script with ![alt text](./Images/23.png) ,  The execution is execution step by step
 
@@ -171,7 +171,7 @@ List of changes:
 * Load columns & data from tables
 
 &nbsp;
-First, we test the query using Kylin UI:
+First, test the query using Kylin UI:
 <p align="center">
   <img src=./Images/27.png />
 </p>
@@ -181,20 +181,20 @@ The result is: (731 rows)
   <img src=./Images/28.png />
 </p>
 
-(Note: We can use  ![alt text](./Images/28a.png) to copy the name of the columns)
+(Note: use ![alt text](./Images/28a.png) to copy the name of the columns)
 
 The result must be similar to:  (See “[script_data_1.txt](script_data_1.txt)”, on gitHub)
 <p align="center">
   <img src=./Images/29.png />
 </p>
 
-We can test the import:
+Test the import script:
  
-   Save Script: ![alt text](./Images/30.png)
+* Save Script: ![alt text](./Images/30.png)
 
-   Out of debug mode: ![alt text](./Images/31.png)
+* Out of debug mode: ![alt text](./Images/31.png)
 
-   Now, “Load data” button must be enabled: ![alt text](./Images/32.png)
+* Now, “Load data” button must be enabled: ![alt text](./Images/32.png)
 
 
 The Output must be similar to: (check that the row count is the same as in the Kylin UI)
@@ -202,7 +202,7 @@ The Output must be similar to: (check that the row count is the same as in the K
   <img src=./Images/33.png />
 </p>
 
-To Import other table (fact table) you only need to add:
+To Import other table (fact table) only need to add:
 
     LOAD PART_DT,LEAF_CATEG_ID,LSTG_SITE_ID,LSTG_FORMAT_NAME,PRICE,
     SELLER_ID,MIN_PRICE_,MAX_PRICE_,COUNT__, COUNT_DISTINCT_SELLER_ID_,
@@ -217,12 +217,12 @@ Data can be selected under an “alias”:
 
 The final load scripts are in“[script_data_2.txt](script_data_2.txt)”, on gitHub
 
-In my Hardware: a Laptop with HBase, Kylin, Hive .. inside a Docker Container, and Qlik is inside a Virtual Box, the performance to ingest data has been good, only 2 sec for 3 Tables and 10K Rows
+Used hardware: a Laptop with HBase, Kylin, Hive .. inside a Docker Container, and Qlik is inside a Virtual Box, the performance to ingest data has been good, only 2 sec for 3 Tables and 10K Rows
 <p align="center">
   <img src=./Images/34.png />
 </p>
 
-We can see all ingested tables in “[data manager](https://help.qlik.com/en-US/sense/3.0/Subsystems/Hub/Content/LoadData/data-management.htm)”: ![alt text](./Images/35.png)  > ![alt text](./Images/36.png)
+See all ingested tables in “[data manager](https://help.qlik.com/en-US/sense/3.0/Subsystems/Hub/Content/LoadData/data-management.htm)”: ![alt text](./Images/35.png)  > ![alt text](./Images/36.png)
 <p align="center">
   <img src=./Images/37.png />
 </p>
@@ -238,10 +238,10 @@ NOTE: If you try to see data of one table: Click in one,  **you aren’t able to
 </p>
 
 &nbsp;
-### Issue 1: Qlik Metadata
+**Issue 1:** Qlik Metadata
 The log of ODBC kylin are in: ![alt text](./Images/40.png)
 
-When use Attempt 1 and 2 are used, we can see sine errors: **SQLGetInfoW**
+When use Attempt 1 and 2 are used, see some errors can be showed: **SQLGetInfoW**
 <p align="center">
   <img src=./Images/41.png />
 </p>
@@ -255,16 +255,16 @@ You can see the actual table associations in:
   <img src=./Images/42.png />
 </p>
 
-But this  association isn’t correct, you can see the correct ones  in Kylin UI > Model designer > Data Model:
+But this association isn’t correct, see the correct ones  in Kylin UI > Model designer > Data Model:
 <p align="center">
   <img src=./Images/43.png />
 </p>
 
-How can I change it?:
+How can be changed?:
 
   In “data manager”:  ![alt text](./Images/44.png) >  ![alt text](./Images/45.png) >  ![alt text](./Images/46.png)
 
-  In true, you can’t change because
+  In true, it can’t changed because
 
   “*Data tables defined in the load script are not managed in Data manage*r”
 
@@ -273,9 +273,9 @@ How can I change it?:
 There is only one way to add data from load script into a sheet:
 In “data manager”: ![alt text](./Images/47.png)  > ![alt text](./Images/48.png)  > ![alt text](./Images/49.png)  > Edit Sheet
 
-You can see all Columns in: ![alt text](./Images/50.png) , you can classifies them like  Dim or measures with Right click
+You can see all Columns in: ![alt text](./Images/50.png) , can be classified like  Dim or measures with Right click
 
-Also, you can define a Hierarchy in Dim:
+Also, define a Hierarchy in Dim:
 <p align="center">
   <img src=./Images/51.png />
 </p>
@@ -286,7 +286,7 @@ Second: Add Dim and Measures (Drag and drop)
 <p align="center">
   <img src=./Images/53.png />
 </p>
-You can View the result from main menu:
+View the result from main menu:
 <p align="center">
   <img src=./Images/54.png />
 </p>
@@ -297,9 +297,9 @@ You can View the result from main menu:
 
 ## Future Work
 * Load data using “**load script**” is a workaround to read data from Apache Kylin, but like the data isnt’t controlled by **Data Manage**r you can’t use the preview of data ([manual  reference](https://help.qlik.com/en-US/sense/3.0/Subsystems/Hub/Content/LoadData/data-management.htm)) ([Qlik Community](https://community.qlik.com/thread/206922))
-* Same problem with “**associations**”, you can’t manage/change them because this data isn’t managed  by **Data Manager**
+* Same problem with “**associations**”, can’t be managed/changed them because this data isn’t managed  by **Data Manager**
 
-This problems means that if your automatic associations aren’t correct, **the data results will be false**
+This problems means that if the automatic associations aren’t correct, **the data results will be false**
 
 &nbsp;
 &nbsp;
