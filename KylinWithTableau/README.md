@@ -1,4 +1,4 @@
--# Connect from Tableau step by step
+# Connect from Tableau step by step
 **Date:** August 2016
 
 **Updated:** March 2017
