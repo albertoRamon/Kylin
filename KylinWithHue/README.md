@@ -1,3 +1,5 @@
+# !! Moved to [Official Doc](http://kylin.apache.org/docs20) /  [Connect from Apache Hue](http://kylin.apache.org/docs20/tutorial/hue.html) !!
+
 # Connect from Apache Hue
 
 **Date:** August 2016
