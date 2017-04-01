@@ -1,3 +1,6 @@
+
+# !! Moved to [Official Doc](http://kylin.apache.org/docs20) /  [Cube Build Tuning Step by Step](http://kylin.apache.org/docs20/tutorial/cube_build_performance.html) !!
+
 # Example of Tuning Cube
 **Date:** Dec 2016
 
