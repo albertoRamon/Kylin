@@ -4,8 +4,8 @@ source ambari-functions/
 
 Start Docker
    docker ps -a
-   docker start 14
-   docker exec -it 14 bash
+   docker start 58
+   docker exec -it 58 bash
 
 Start Kylin
   check kylin, si no responde 
@@ -54,8 +54,8 @@ ToDo:  Use root for deploy Kylin --> Need be root to execute --> Root isn't supe
 UPGRADE KILYN (runing container)
   Download correct version for HBase
   tar -xvzf 
-  docker cp apache-kylin-1.6.0-SNAPSHOT-bin 14:/usr/local/
-  docker cp apache-kylin-1.6.0-bin 14:/usr/local/
+  docker cp apache-kylin-1.6.0-SNAPSHOT-bin 58:/usr/local/
+  docker cp apache-kylin-1.6.0-bin 58:/usr/local/
   
   Acordarse de actualizar KYLIN_HOME, una solucion es que KYLIN_HOME sea un soft link y redireccionarlo
   	cd /usr/local
@@ -82,4 +82,9 @@ PORTs:
  KYLIN-1838 Fix sample cube definition 
 	 https://github.com/apache/kylin/commit/90a234e3d893edd1993aeb2ff89c346a41fd41e7
 	 https://issues.apache.org/jira/browse/KYLIN-1838
+	 
+BORRAR CONTAINER  & IMAGES
+	docker stop 3b
+	docker rm -f -v 3b
+
 

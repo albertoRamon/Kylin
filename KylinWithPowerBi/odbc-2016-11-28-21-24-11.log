@@ -1,0 +1,54 @@
+Log start: Mon Nov 28 21:24:11 2016
+
+Log start: Mon Nov 28 21:24:11 2016
+
+[INFO ][2016-11-28.21:24:11]SQLFreeStmt called, 496478464 with option 0
+[INFO ][2016-11-28.21:24:11]================================================================
+[INFO ][2016-11-28.21:24:11]start exec the query: 
+[INFO ][2016-11-28.21:24:11]select "PART_DT",
+    "LEAF_CATEG_ID",
+    "LSTG_SITE_ID",
+    "LSTG_FORMAT_NAME",
+    "PRICE",
+    "SELLER_ID"
+from "DEFAULT"."KYLIN_SALES"
+[INFO ][2016-11-28.21:24:11]SQLFreeStmt called, 494018288 with option 0
+[INFO ][2016-11-28.21:24:11]================================================================
+[INFO ][2016-11-28.21:24:11]start exec the query: 
+[INFO ][2016-11-28.21:24:11]select "USER_DEFINED_FIELD1",
+    "USER_DEFINED_FIELD3",
+    "UPD_DATE",
+    "UPD_USER",
+    "LEAF_CATEG_ID",
+    "SITE_ID",
+    "META_CATEG_NAME",
+    "CATEG_LVL2_NAME",
+    "CATEG_LVL3_NAME"
+from "DEFAULT"."KYLIN_CATEGORY_GROUPINGS"
+Log start: Mon Nov 28 21:24:11 2016
+
+[INFO ][2016-11-28.21:24:11]Successfully done executing the query
+[INFO ][2016-11-28.21:24:11]SQLFreeHandle called, Handle Type: 3, Handle: 494018288
+[INFO ][2016-11-28.21:24:11]SQLDisconnect called
+[INFO ][2016-11-28.21:24:11]SQLFreeHandle called, Handle Type: 2, Handle: 494059776
+[INFO ][2016-11-28.21:24:11]SQLFreeHandle called, Handle Type: 1, Handle: 494176720
+[INFO ][2016-11-28.21:24:11]SQLFreeStmt called, 499270352 with option 0
+[INFO ][2016-11-28.21:24:11]================================================================
+[INFO ][2016-11-28.21:24:11]start exec the query: 
+[INFO ][2016-11-28.21:24:11]select "WEEK_BEG_DT",
+    "CAL_DT"
+from "DEFAULT"."KYLIN_CAL_DT"
+[INFO ][2016-11-28.21:24:11]Successfully done executing the query
+[INFO ][2016-11-28.21:24:11]Last row of current query has been fetched
+[INFO ][2016-11-28.21:24:11]Last row of current query has been fetched
+[INFO ][2016-11-28.21:24:11]Successfully done executing the query
+[INFO ][2016-11-28.21:24:12]SQLFreeHandle called, Handle Type: 3, Handle: 499270352
+[INFO ][2016-11-28.21:24:12]SQLDisconnect called
+[INFO ][2016-11-28.21:24:12]SQLFreeHandle called, Handle Type: 2, Handle: 499136816
+[INFO ][2016-11-28.21:24:12]SQLFreeHandle called, Handle Type: 1, Handle: 499198336
+[INFO ][2016-11-28.21:24:12]Last row of current query has been fetched
+[INFO ][2016-11-28.21:24:12]Last row of current query has been fetched
+[INFO ][2016-11-28.21:24:12]SQLFreeHandle called, Handle Type: 3, Handle: 496478464
+[INFO ][2016-11-28.21:24:12]SQLDisconnect called
+[INFO ][2016-11-28.21:24:12]SQLFreeHandle called, Handle Type: 2, Handle: 496022464
+[INFO ][2016-11-28.21:24:12]SQLFreeHandle called, Handle Type: 1, Handle: 496113728

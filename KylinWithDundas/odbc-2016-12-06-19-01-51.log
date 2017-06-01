@@ -1,0 +1,992 @@
+Log start: Tue Dec 06 19:01:51 2016
+
+[ERROR][2016-12-06.19:01:51]The REST request failed to get metadata
+[ERROR][2016-12-06.19:01:51]Project 'HERR_BANK01' does not exist;
+[INFO ][2016-12-06.19:01:51]SQLFreeHandle called, Handle Type: 2, Handle: 146024336
+[INFO ][2016-12-06.19:01:51]SQLFreeHandle called, Handle Type: 1, Handle: 124595056
+[ERROR][2016-12-06.19:03:40]The REST request failed to get metadata
+[ERROR][2016-12-06.19:03:40]Project 'HERR_BANK01' does not exist;
+[INFO ][2016-12-06.19:03:40]SQLFreeHandle called, Handle Type: 2, Handle: 146025056
+[INFO ][2016-12-06.19:03:40]SQLFreeHandle called, Handle Type: 1, Handle: 124592368
+[ERROR][2016-12-06.19:04:02]The REST request failed to get metadata
+[ERROR][2016-12-06.19:04:02]Project 'HERR_BANK01' does not exist;
+[INFO ][2016-12-06.19:04:02]SQLFreeHandle called, Handle Type: 2, Handle: 146025056
+[INFO ][2016-12-06.19:04:02]SQLFreeHandle called, Handle Type: 1, Handle: 124595056
+[INFO ][2016-12-06.19:04:28]SQLFreeStmt called, 171191072 with option 0
+[INFO ][2016-12-06.19:04:28]SQLFreeHandle called, Handle Type: 3, Handle: 171191072
+[INFO ][2016-12-06.19:04:28]SQLDisconnect called
+[INFO ][2016-12-06.19:04:28]SQLFreeHandle called, Handle Type: 2, Handle: 146026016
+[INFO ][2016-12-06.19:04:28]SQLFreeHandle called, Handle Type: 1, Handle: 124595056
+[INFO ][2016-12-06.19:04:43]Last row of current query has been fetched
+[INFO ][2016-12-06.19:04:43]SQLFreeStmt called, 145649568 with option 0
+[INFO ][2016-12-06.19:04:43]SQLFreeHandle called, Handle Type: 3, Handle: 145649568
+[INFO ][2016-12-06.19:04:43]Last row of current query has been fetched
+[INFO ][2016-12-06.19:04:43]SQLFreeStmt called, 145649568 with option 0
+[INFO ][2016-12-06.19:04:43]SQLFreeHandle called, Handle Type: 3, Handle: 145649568
+[INFO ][2016-12-06.19:04:43]SQLDisconnect called
+[INFO ][2016-12-06.19:04:43]SQLFreeHandle called, Handle Type: 2, Handle: 146026016
+[INFO ][2016-12-06.19:04:43]SQLFreeHandle called, Handle Type: 1, Handle: 124589792
+[INFO ][2016-12-06.19:05:29]Last row of current query has been fetched
+[INFO ][2016-12-06.19:05:29]SQLFreeStmt called, 145649152 with option 0
+[INFO ][2016-12-06.19:05:29]SQLFreeHandle called, Handle Type: 3, Handle: 145649152
+[INFO ][2016-12-06.19:05:29]Last row of current query has been fetched
+[INFO ][2016-12-06.19:05:29]SQLFreeStmt called, 145649152 with option 0
+[INFO ][2016-12-06.19:05:29]SQLFreeHandle called, Handle Type: 3, Handle: 145649152
+[INFO ][2016-12-06.19:05:29]SQLDisconnect called
+[INFO ][2016-12-06.19:05:29]SQLFreeHandle called, Handle Type: 2, Handle: 146024576
+[INFO ][2016-12-06.19:05:29]SQLFreeHandle called, Handle Type: 1, Handle: 124591696
+[INFO ][2016-12-06.19:05:29]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:05:29]SQLFreeHandle called, Handle Type: 3, Handle: 145650400
+[INFO ][2016-12-06.19:05:29]SQLDisconnect called
+[INFO ][2016-12-06.19:05:29]SQLFreeHandle called, Handle Type: 2, Handle: 146024576
+[INFO ][2016-12-06.19:05:29]SQLFreeHandle called, Handle Type: 1, Handle: 124588112
+[INFO ][2016-12-06.19:05:30]Last row of current query has been fetched
+[INFO ][2016-12-06.19:05:30]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 3, Handle: 145650400
+[INFO ][2016-12-06.19:05:30]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:05:30]================================================================
+[INFO ][2016-12-06.19:05:30]start exec the query: 
+[INFO ][2016-12-06.19:05:30]SELECT * FROM "DEFAULT"."KYLIN_CAL_DT" WHERE 1 = 2
+[INFO ][2016-12-06.19:05:30]Successfully done executing the query
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:05:30]Last row of current query has been fetched
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 3, Handle: 147885792
+[INFO ][2016-12-06.19:05:30]Last row of current query has been fetched
+[INFO ][2016-12-06.19:05:30]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:05:30]SQLFreeStmt called, 147885792 with option 0
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 3, Handle: 147885792
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 3, Handle: 145650400
+[INFO ][2016-12-06.19:05:30]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 3, Handle: 145650400
+[INFO ][2016-12-06.19:05:30]SQLDisconnect called
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 2, Handle: 146024576
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 1, Handle: 124589344
+[INFO ][2016-12-06.19:05:30]Last row of current query has been fetched
+[INFO ][2016-12-06.19:05:30]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 3, Handle: 145650400
+[INFO ][2016-12-06.19:05:30]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:05:30]================================================================
+[INFO ][2016-12-06.19:05:30]start exec the query: 
+[INFO ][2016-12-06.19:05:30]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:05:30]Successfully done executing the query
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:05:30]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:05:30]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:05:30]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 3, Handle: 145650400
+[INFO ][2016-12-06.19:05:30]SQLDisconnect called
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 2, Handle: 146024576
+[INFO ][2016-12-06.19:05:30]SQLFreeHandle called, Handle Type: 1, Handle: 124595504
+[INFO ][2016-12-06.19:11:34]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:34]SQLFreeStmt called, 147973408 with option 0
+[INFO ][2016-12-06.19:11:34]SQLFreeHandle called, Handle Type: 3, Handle: 147973408
+[INFO ][2016-12-06.19:11:34]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:34]SQLFreeStmt called, 147972992 with option 0
+[INFO ][2016-12-06.19:11:34]SQLFreeHandle called, Handle Type: 3, Handle: 147972992
+[INFO ][2016-12-06.19:11:34]SQLDisconnect called
+[INFO ][2016-12-06.19:11:34]SQLFreeHandle called, Handle Type: 2, Handle: 146029376
+[INFO ][2016-12-06.19:11:34]SQLFreeHandle called, Handle Type: 1, Handle: 124589456
+[INFO ][2016-12-06.19:11:52]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:52]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:52]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:52]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:52]SQLDisconnect called
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 2, Handle: 146506640
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 1, Handle: 124589904
+[INFO ][2016-12-06.19:11:52]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:52]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:52]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:52]================================================================
+[INFO ][2016-12-06.19:11:52]start exec the query: 
+[INFO ][2016-12-06.19:11:52]SELECT * FROM "DEFAULT"."KYLIN_CAL_DT" WHERE 1 = 2
+[INFO ][2016-12-06.19:11:52]Successfully done executing the query
+[FATAL][2016-12-06.19:11:52]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:11:52]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:52]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:11:52]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:52]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:11:52]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:52]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:11:52]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:11:52]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:11:52]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:52]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:52]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:52]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:52]SQLDisconnect called
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 2, Handle: 146506640
+[INFO ][2016-12-06.19:11:52]SQLFreeHandle called, Handle Type: 1, Handle: 124589120
+[INFO ][2016-12-06.19:11:53]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:53]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:53]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:53]================================================================
+[INFO ][2016-12-06.19:11:53]start exec the query: 
+[INFO ][2016-12-06.19:11:53]SELECT * FROM "DEFAULT"."KYLIN_CATEGORY_GROUPINGS" WHERE 1 = 2
+[INFO ][2016-12-06.19:11:53]Successfully done executing the query
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:11:53]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:11:53]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:53]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:53]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:53]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:53]SQLDisconnect called
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 2, Handle: 146506640
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 1, Handle: 124587888
+[INFO ][2016-12-06.19:11:53]Last row of current query has been fetched
+[INFO ][2016-12-06.19:11:53]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:53]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:53]================================================================
+[INFO ][2016-12-06.19:11:53]start exec the query: 
+[INFO ][2016-12-06.19:11:53]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:11:53]Successfully done executing the query
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:11:53]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:11:53]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:11:53]SQLFreeStmt called, 145763664 with option 0
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 3, Handle: 145763664
+[INFO ][2016-12-06.19:11:53]SQLDisconnect called
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 2, Handle: 146506640
+[INFO ][2016-12-06.19:11:53]SQLFreeHandle called, Handle Type: 1, Handle: 124591696
+[INFO ][2016-12-06.19:28:49]Last row of current query has been fetched
+[INFO ][2016-12-06.19:28:49]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:28:49]SQLFreeHandle called, Handle Type: 3, Handle: 145650400
+[INFO ][2016-12-06.19:28:49]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:28:49]================================================================
+[INFO ][2016-12-06.19:28:49]start exec the query: 
+[INFO ][2016-12-06.19:28:49]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:28:49]Successfully done executing the query
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:49]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:28:49]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:28:49]SQLFreeStmt called, 145650400 with option 0
+[INFO ][2016-12-06.19:28:49]SQLFreeHandle called, Handle Type: 3, Handle: 145650400
+[INFO ][2016-12-06.19:28:49]SQLDisconnect called
+[INFO ][2016-12-06.19:28:49]SQLFreeHandle called, Handle Type: 2, Handle: 146500640
+[INFO ][2016-12-06.19:28:49]SQLFreeHandle called, Handle Type: 1, Handle: 124588560
+[INFO ][2016-12-06.19:28:53]Last row of current query has been fetched
+[INFO ][2016-12-06.19:28:53]SQLFreeStmt called, 147974240 with option 0
+[INFO ][2016-12-06.19:28:53]SQLFreeHandle called, Handle Type: 3, Handle: 147974240
+[INFO ][2016-12-06.19:28:53]SQLFreeStmt called, 147974240 with option 0
+[INFO ][2016-12-06.19:28:53]================================================================
+[INFO ][2016-12-06.19:28:53]start exec the query: 
+[INFO ][2016-12-06.19:28:53]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:28:54]Successfully done executing the query
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:28:54]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:28:54]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:28:54]SQLFreeStmt called, 147974240 with option 0
+[INFO ][2016-12-06.19:28:54]SQLFreeHandle called, Handle Type: 3, Handle: 147974240
+[INFO ][2016-12-06.19:28:54]SQLDisconnect called
+[INFO ][2016-12-06.19:28:54]SQLFreeHandle called, Handle Type: 2, Handle: 146501360
+[INFO ][2016-12-06.19:28:54]SQLFreeHandle called, Handle Type: 1, Handle: 146687344
+[INFO ][2016-12-06.19:29:03]SQLFreeStmt called, 145649568 with option 0
+[INFO ][2016-12-06.19:29:03]================================================================
+[INFO ][2016-12-06.19:29:03]start exec the query: 
+[INFO ][2016-12-06.19:29:03]SELECT T."USER_DEFINED_FIELD1" AS "TE0" FROM "DEFAULT"."KYLIN_CAL_DT" T GROUP BY T."USER_DEFINED_FIELD1" ORDER BY T."USER_DEFINED_FIELD1"
+[ERROR][2016-12-06.19:29:03]The REST query request failed, the error message is: Error while executing SQL "SELECT T."USER_DEFINED_FIELD1" AS "TE0" FROM "DEFAULT"."KYLIN_CAL_DT" T GROUP BY T."USER_DEFINED_FIELD1" ORDER BY T."USER_DEFINED_FIELD1"": From line 1, column 84 to line 1, column 104: Column 'USER_DEFINED_FIELD1' not found in table 'T'
+[INFO ][2016-12-06.19:29:03]SQLFreeHandle called, Handle Type: 3, Handle: 145649568
+[INFO ][2016-12-06.19:29:03]SQLDisconnect called
+[INFO ][2016-12-06.19:29:03]SQLFreeHandle called, Handle Type: 2, Handle: 124706240
+[INFO ][2016-12-06.19:29:03]SQLFreeHandle called, Handle Type: 1, Handle: 146425296
+[INFO ][2016-12-06.19:30:26]SQLFreeStmt called, 145649568 with option 0
+[INFO ][2016-12-06.19:30:26]================================================================
+[INFO ][2016-12-06.19:30:26]start exec the query: 
+[INFO ][2016-12-06.19:30:26]SELECT T."USER_DEFINED_FIELD1" AS "TE0", T."SITE_ID" AS "TE1" FROM "DEFAULT"."KYLIN_CAL_DT" T GROUP BY T."USER_DEFINED_FIELD1", T."SITE_ID" ORDER BY T."USER_DEFINED_FIELD1", T."SITE_ID"
+[ERROR][2016-12-06.19:30:27]The REST query request failed, the error message is: Error while executing SQL "SELECT T."USER_DEFINED_FIELD1" AS "TE0", T."SITE_ID" AS "TE1" FROM "DEFAULT"."KYLIN_CAL_DT" T GROUP BY T."USER_DEFINED_FIELD1", T."SITE_ID" ORDER BY T."USER_DEFINED_FIELD1", T."SITE_ID"": From line 1, column 106 to line 1, column 126: Column 'USER_DEFINED_FIELD1' not found in table 'T'
+[INFO ][2016-12-06.19:30:27]SQLFreeHandle called, Handle Type: 3, Handle: 145649568
+[INFO ][2016-12-06.19:30:27]SQLDisconnect called
+[INFO ][2016-12-06.19:30:27]SQLFreeHandle called, Handle Type: 2, Handle: 146507120
+[INFO ][2016-12-06.19:30:27]SQLFreeHandle called, Handle Type: 1, Handle: 146691040
+[INFO ][2016-12-06.19:37:38]SQLFreeStmt called, 147972992 with option 0
+[INFO ][2016-12-06.19:37:38]SQLFreeHandle called, Handle Type: 3, Handle: 147972992
+[INFO ][2016-12-06.19:37:38]SQLDisconnect called
+[INFO ][2016-12-06.19:37:38]SQLFreeHandle called, Handle Type: 2, Handle: 148533824
+[INFO ][2016-12-06.19:37:38]SQLFreeHandle called, Handle Type: 1, Handle: 146687568
+[INFO ][2016-12-06.19:44:16]Last row of current query has been fetched
+[INFO ][2016-12-06.19:44:16]SQLFreeStmt called, 147975456 with option 0
+[INFO ][2016-12-06.19:44:16]SQLFreeHandle called, Handle Type: 3, Handle: 147975456
+[INFO ][2016-12-06.19:44:16]SQLFreeStmt called, 147975456 with option 0
+[INFO ][2016-12-06.19:44:16]================================================================
+[INFO ][2016-12-06.19:44:16]start exec the query: 
+[INFO ][2016-12-06.19:44:16]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:44:16]Successfully done executing the query
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:44:16]SQLFreeStmt called, 147975456 with option 0
+[INFO ][2016-12-06.19:44:16]SQLFreeHandle called, Handle Type: 3, Handle: 147975456
+[INFO ][2016-12-06.19:44:16]SQLDisconnect called
+[INFO ][2016-12-06.19:44:16]SQLFreeHandle called, Handle Type: 2, Handle: 148535872
+[INFO ][2016-12-06.19:44:16]SQLFreeHandle called, Handle Type: 1, Handle: 146690144
+[INFO ][2016-12-06.19:44:16]Last row of current query has been fetched
+[INFO ][2016-12-06.19:44:16]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:16]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:44:16]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:16]================================================================
+[INFO ][2016-12-06.19:44:16]start exec the query: 
+[INFO ][2016-12-06.19:44:16]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:44:16]Successfully done executing the query
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:16]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:44:16]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:44:16]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:16]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:44:16]SQLDisconnect called
+[INFO ][2016-12-06.19:44:16]SQLFreeHandle called, Handle Type: 2, Handle: 146025536
+[INFO ][2016-12-06.19:44:16]SQLFreeHandle called, Handle Type: 1, Handle: 146686896
+[INFO ][2016-12-06.19:44:17]Last row of current query has been fetched
+[INFO ][2016-12-06.19:44:17]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:17]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:44:17]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:17]================================================================
+[INFO ][2016-12-06.19:44:17]start exec the query: 
+[INFO ][2016-12-06.19:44:17]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:44:17]Successfully done executing the query
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:17]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:44:17]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:44:17]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:17]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:44:17]SQLDisconnect called
+[INFO ][2016-12-06.19:44:17]SQLFreeHandle called, Handle Type: 2, Handle: 146025536
+[INFO ][2016-12-06.19:44:17]SQLFreeHandle called, Handle Type: 1, Handle: 146691712
+[INFO ][2016-12-06.19:44:18]Last row of current query has been fetched
+[INFO ][2016-12-06.19:44:18]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:18]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:44:18]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:18]================================================================
+[INFO ][2016-12-06.19:44:18]start exec the query: 
+[INFO ][2016-12-06.19:44:18]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:44:18]Successfully done executing the query
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:44:18]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:44:18]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:44:18]SQLFreeStmt called, 145767408 with option 0
+[INFO ][2016-12-06.19:44:18]SQLFreeHandle called, Handle Type: 3, Handle: 145767408
+[INFO ][2016-12-06.19:44:18]SQLDisconnect called
+[INFO ][2016-12-06.19:44:18]SQLFreeHandle called, Handle Type: 2, Handle: 146025536
+[INFO ][2016-12-06.19:44:18]SQLFreeHandle called, Handle Type: 1, Handle: 146690816
+[INFO ][2016-12-06.19:44:25]SQLFreeStmt called, 147972992 with option 0
+[INFO ][2016-12-06.19:44:25]================================================================
+[INFO ][2016-12-06.19:44:25]start exec the query: 
+[INFO ][2016-12-06.19:44:25]SELECT T."USER_DEFINED_FIELD1" AS "TE0" FROM "DEFAULT"."KYLIN_CAL_DT" T GROUP BY T."USER_DEFINED_FIELD1" ORDER BY T."USER_DEFINED_FIELD1"
+[ERROR][2016-12-06.19:44:25]The REST query request failed, the error message is: Error while executing SQL "SELECT T."USER_DEFINED_FIELD1" AS "TE0" FROM "DEFAULT"."KYLIN_CAL_DT" T GROUP BY T."USER_DEFINED_FIELD1" ORDER BY T."USER_DEFINED_FIELD1"": From line 1, column 84 to line 1, column 104: Column 'USER_DEFINED_FIELD1' not found in table 'T'
+[INFO ][2016-12-06.19:44:25]SQLFreeHandle called, Handle Type: 3, Handle: 147972992
+[INFO ][2016-12-06.19:44:25]SQLDisconnect called
+[INFO ][2016-12-06.19:44:25]SQLFreeHandle called, Handle Type: 2, Handle: 148513472
+[INFO ][2016-12-06.19:44:25]SQLFreeHandle called, Handle Type: 1, Handle: 146692048
+[INFO ][2016-12-06.19:45:46]SQLFreeStmt called, 148527616 with option 0
+[INFO ][2016-12-06.19:45:46]================================================================
+[INFO ][2016-12-06.19:45:46]start exec the query: 
+[INFO ][2016-12-06.19:45:46]SELECT T."META_CATEG_NAME" AS "TE0" FROM "DEFAULT"."KYLIN_CAL_DT" T GROUP BY T."META_CATEG_NAME" ORDER BY T."META_CATEG_NAME"
+[ERROR][2016-12-06.19:45:46]The REST query request failed, the error message is: Error while executing SQL "SELECT T."META_CATEG_NAME" AS "TE0" FROM "DEFAULT"."KYLIN_CAL_DT" T GROUP BY T."META_CATEG_NAME" ORDER BY T."META_CATEG_NAME"": From line 1, column 80 to line 1, column 96: Column 'META_CATEG_NAME' not found in table 'T'
+[INFO ][2016-12-06.19:45:46]SQLFreeHandle called, Handle Type: 3, Handle: 148527616
+[INFO ][2016-12-06.19:45:46]SQLDisconnect called
+[INFO ][2016-12-06.19:45:46]SQLFreeHandle called, Handle Type: 2, Handle: 171735552
+[INFO ][2016-12-06.19:45:46]SQLFreeHandle called, Handle Type: 1, Handle: 146691040
+[INFO ][2016-12-06.19:52:41]Last row of current query has been fetched
+[INFO ][2016-12-06.19:52:41]SQLFreeStmt called, 145761584 with option 0
+[INFO ][2016-12-06.19:52:41]SQLFreeHandle called, Handle Type: 3, Handle: 145761584
+[INFO ][2016-12-06.19:52:41]SQLFreeStmt called, 145761584 with option 0
+[INFO ][2016-12-06.19:52:41]================================================================
+[INFO ][2016-12-06.19:52:41]start exec the query: 
+[INFO ][2016-12-06.19:52:41]SELECT * FROM "DEFAULT"."KYLIN_SALES" WHERE 1 = 2
+[INFO ][2016-12-06.19:52:41]Successfully done executing the query
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 1, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 2, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 3, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 4, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 5, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 6, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 7, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 8, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 9, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 10, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 11, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 12, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 13, FldID: 1211
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 1, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 2, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 3, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 4, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 5, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 6, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 7, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 8, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 9, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 10, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[FATAL][2016-12-06.19:52:41]SQLColAttribute unknown attr, ColNum: 11, FldID: 1212
+
+[FATAL][2016-12-06.19:52:41]In Shipping mode, Skip popping up window...
+[INFO ][2016-12-06.19:52:41]SQLFreeStmt called, 145761584 with option 0
+[INFO ][2016-12-06.19:52:41]SQLFreeHandle called, Handle Type: 3, Handle: 145761584
+[INFO ][2016-12-06.19:52:41]SQLDisconnect called
+[INFO ][2016-12-06.19:52:41]SQLFreeHandle called, Handle Type: 2, Handle: 146023616
+[INFO ][2016-12-06.19:52:41]SQLFreeHandle called, Handle Type: 1, Handle: 146691936

@@ -1,0 +1,29 @@
+
+Title:
+Arithmetic operation resulted in an overflow.
+
+Details:
+Web response code: 500 Internal Server Error (System.OverflowException)
+
+   at System.Data.Odbc.SQLLEN.op_Implicit(SQLLEN value)
+   at System.Data.Odbc.OdbcDataReader.BuildMetaDataInfo()
+   at System.Data.Odbc.OdbcDataReader.GetSchemaTable()
+   at System.Data.Odbc.OdbcMetaDataFactory.NewDataTableFromReader(IDataReader reader, Object[]& values, String tableName)
+   at System.Data.Odbc.OdbcMetaDataFactory.DataTableFromDataReader(IDataReader reader, String tableName)
+   at System.Data.Odbc.OdbcMetaDataFactory.GetTablesCollection(String[] restrictions, OdbcConnection connection, Boolean isTables)
+   at System.Data.Odbc.OdbcMetaDataFactory.PrepareCollection(String collectionName, String[] restrictions, DbConnection connection)
+   at System.Data.ProviderBase.DbMetaDataFactory.GetSchema(DbConnection connection, String collectionName, String[] restrictions)
+   at System.Data.ProviderBase.DbConnectionInternal.GetSchema(DbConnectionFactory factory, DbConnectionPoolGroup poolGroup, DbConnection outerConnection, String collectionName, String[] restrictions)
+   at System.Data.Odbc.OdbcConnection.GetSchema(String collectionName, String[] restrictionValues)
+   at Dundas.BI.Data.DataProviders.Relational.OdbcProvider.DiscoverStructures(IDisposable connection, SupportedDataStructures structureTypes)
+   at Dundas.BI.Entities.DataConnectors.DataConnectorService.<EnumerateStructures>d__6.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dundas.BI.Entities.DataConnectors.DataConnectorService.ListStructures(DataConnector dataConnector, SupportedDataStructures types)
+   at Dundas.BI.WebApi.Controllers.DataConnectorController.ListStructures(Guid sessionId, ListStructuresOptions listStructuresOptions)
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass13.<GetExecutor>b__c(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Threading.Tasks.TaskHelpers.RunSynchronously[TResult](Func`1 func, CancellationToken cancellationToken)
+
+Version: 3.0.2.1000

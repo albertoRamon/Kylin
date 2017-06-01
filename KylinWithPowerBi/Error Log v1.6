@@ -1,0 +1,223 @@
+Feedback Type:
+Frown (Error)
+
+Timestamp:
+2016-11-28T20:13:10.4040430Z
+
+Local Time:
+2016-11-28T21:13:10.4040430+01:00
+
+Product Version:
+2.40.4554.463 (PBIDesktop) (x64)
+
+Release:
+October, 2016
+
+IE Version:
+10.0.9200.16686
+
+OS Version:
+Microsoft Windows NT 6.1.7601 Service Pack 1 (x64 en-US)
+
+CLR Version:
+4.5.2 or later [Release Number = 379893]
+
+Workbook Package Info:
+1* - en-US, fastCombine: Disabled.
+
+Peak Working Set:
+393 MB
+
+Private Memory:
+259 MB
+
+Peak Virtual Memory:
+1.81 GB
+
+Error Message:
+Array dimensions exceeded supported range.
+
+Stack Trace:
+Microsoft.Mashup.Evaluator.Interface.ErrorException: Array dimensions exceeded supported range. ---> System.OverflowException: Array dimensions exceeded supported range. ---> System.OverflowException: Array dimensions exceeded supported range.
+   at Microsoft.Mashup.Engine1.Library.Odbc.OdbcPageReader.OdbcPage.GetData(SQL_C cType, Int32 rowIndex, Int32 columnIndex, Int64 pos)
+   at Microsoft.Mashup.Engine1.Library.Odbc.OdbcPageReader.OdbcPage.LoadCellData(ColumnInfo columnInfo, Column column, Int32 rowIndex, Int32 rowSetIndex, Int32 columnIndex)
+   at Microsoft.Mashup.Engine1.Library.Odbc.OdbcPageReader.OdbcPage.SyncColumnsPage(Byte* boundColumnsDataPtr)
+   at Microsoft.Mashup.Engine1.Library.Odbc.OdbcPageReader.OdbcPage.Read(OdbcStatementHandle statement, RowRange rowRange)
+   at Microsoft.Mashup.Engine1.Library.Odbc.OdbcPageReader.Read(OdbcPage page)
+   at Microsoft.Mashup.Engine.Interface.Tracing.TracingPageReader.Read(IPage page)
+   at Microsoft.Mashup.Common.IPageReaderExtensions.NotifyingPageReader.Read(IPage page)
+   at Microsoft.Mashup.Common.IPageReaderExtensions.NotifyingPageReader.Read(IPage page)
+   at Microsoft.Mashup.Engine1.Library.Odbc.OdbcDataSource.ExceptionHandlingPageReader.<>c__DisplayClass1c.<Read>b__1b()
+   at Microsoft.Mashup.Engine1.Library.Common.DbExceptionHandler.<>c__DisplayClass1.<InvokeWithoutRetry>b__0()
+   at Microsoft.Mashup.Engine1.Library.Common.DbExceptionHandler.RunWithRetryGuard[T](Int32 maxRetryAttempts, Func`1 action)
+   at Microsoft.Mashup.Engine1.Library.Common.DbExceptionHandler.Invoke[T](Int32 maxRetry, Func`1 action)
+   at Microsoft.Mashup.Engine1.Library.Common.DbExceptionHandler.InvokeWithoutRetry(Action action)
+   at Microsoft.Mashup.Engine1.Library.Common.ProgressPageReader.Read(IPage page)
+   at Microsoft.Mashup.Engine1.Library.Common.DbExceptionHandler.<>c__DisplayClass1.<InvokeWithoutRetry>b__0()
+   at Microsoft.Mashup.Engine1.Library.Common.DbExceptionHandler.RunWithRetryGuard[T](Int32 maxRetryAttempts, Func`1 action)
+   at Microsoft.Mashup.Engine1.Library.Common.DbExceptionHandler.Invoke[T](Int32 maxRetry, Func`1 action)
+   at Microsoft.Mashup.Engine1.Library.Common.DbExceptionHandler.InvokeWithoutRetry(Action action)
+   at Microsoft.Mashup.Engine.Interface.Tracing.TracingPageReader.Read(IPage page)
+   at Microsoft.Mashup.Evaluator.RemotePageReader.<>c__DisplayClass7.<RunStub>b__0()
+   at Microsoft.Mashup.Evaluator.EvaluationHost.ReportExceptions(IHostTrace trace, IEngineHost engineHost, IMessageChannel channel, Action action)
+   --- End of inner exception stack trace ---
+   at Microsoft.Mashup.Common.SafeExceptions.IgnoreSafeExceptions(IEngineHost host, IHostTrace trace, Action action)
+   at Microsoft.Mashup.Evaluator.EvaluationHost.TryReportException(IHostTrace trace, IEngineHost engineHost, IMessageChannel channel, Exception exception)
+   at Microsoft.Mashup.Evaluator.EvaluationHost.ReportExceptions(IHostTrace trace, IEngineHost engineHost, IMessageChannel channel, Action action)
+   at Microsoft.Mashup.Evaluator.RemotePageReader.RunStub(IEngineHost engineHost, IMessageChannel channel, Func`1 getPageReader)
+   at Microsoft.Mashup.Evaluator.RemoteDocumentEvaluator.Service.<>c__DisplayClass1f`1.<OnBeginGetResult>b__1c()
+   at Microsoft.Mashup.Evaluator.EvaluationHost.ReportExceptions(IHostTrace trace, IEngineHost engineHost, IMessageChannel channel, Action action)
+   at Microsoft.Mashup.Evaluator.RemoteDocumentEvaluator.Service.OnBeginGetResult[T](IMessageChannel channel, BeginGetResultMessage message, Action`1 action)
+   at Microsoft.Mashup.Evaluator.RemoteDocumentEvaluator.Service.OnBeginGetDataReaderSource(IMessageChannel channel, BeginGetDataReaderSourceMessage message)
+   at Microsoft.Mashup.Evaluator.MessageHandlers.TryDispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.ChannelMessenger.ChannelMessageHandlers.TryDispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.ChannelMessenger.OnMessageWithUnknownChannel(IMessageChannel baseChannel, MessageWithUnknownChannel messageWithUnknownChannel)
+   at Microsoft.Mashup.Evaluator.MessageHandlers.TryDispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.ChannelMessenger.ChannelMessageHandlers.TryDispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.MessageHandlers.Dispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.EvaluationHost.Run()
+   at Microsoft.Mashup.Container.EvaluationContainerMain.Run(Object args)
+   at Microsoft.Mashup.Evaluator.SafeThread2.<>c__DisplayClass15.<CreateAction>b__14(Object o)
+   at Microsoft.Mashup.Container.EvaluationContainerMain.SafeRun(String[] args)
+   at Microsoft.Mashup.Container.EvaluationContainerMain.Main(String[] args)
+   --- End of inner exception stack trace ---
+   at Microsoft.Mashup.Evaluator.EvaluationHost.OnException(IEngineHost engineHost, IMessageChannel channel, ExceptionMessage message)
+   at Microsoft.Mashup.Evaluator.MessageHandlers.TryDispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.MessageHandlers.Dispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.ChannelMessenger.ChannelMessageHandlers.TryDispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.MessageHandlers.Dispatch(IMessageChannel channel, Message message)
+   at Microsoft.Mashup.Evaluator.MessageBasedInputStream.ReadNextChunkAndCheckIfClosed()
+   at Microsoft.Mashup.Evaluator.MessageBasedInputStream.ReadNextChunk()
+   at Microsoft.Mashup.Evaluator.ChunkedInputStream.ReadByte()
+   at Microsoft.OleDb.Serialization.PageReader.ReadInt32()
+   at Microsoft.OleDb.Serialization.ColumnsPage.Deserialize(PageReader reader)
+   at Microsoft.OleDb.Serialization.OleDbPageReader.Read(ColumnsPage page)
+   at Microsoft.Mashup.Engine.Interface.Tracing.TracingPageReader.Read(IPage page)
+   at Microsoft.Mashup.OleDbProvider.DataHost.NonBufferingMashupEvaluator.MashupEvaluation.ExceptionResolverPageReader.Read(IPage page)
+   at Microsoft.Mashup.Common.IPageReaderExtensions.NotifyingPageReader.Read(IPage page)
+   at Microsoft.Mashup.Engine.Interface.Tracing.TracingPageReader.Read(IPage page)
+   at Microsoft.Mashup.Common.IPageReaderExtensions.NotifyingPageReader.Read(IPage page)
+   at Microsoft.OleDb.Serialization.PageReaderRowset.Microsoft.OleDb.IRowset.GetNextRows(HCHAPTER hchapter, DBROWOFFSET lRowsOffset, DBROWCOUNT cRows, DBCOUNTITEM& countRowsObtained, HROW** pRows)
+   at Microsoft.Mashup.OleDbProvider.TracingRowset.Microsoft.OleDb.IRowset.GetNextRows(HCHAPTER hReserved, DBROWOFFSET lRowsOffset, DBROWCOUNT cRows, DBCOUNTITEM& countRowsObtained, HROW** pRows)
+
+Invocation Stack Trace:
+   at Microsoft.Mashup.Host.Document.ExceptionExtensions.GetCurrentInvocationStackTrace()
+   at Microsoft.Mashup.Client.ClientShared.StackTraceInfo..ctor(String exceptionStackTrace, String invocationStackTrace)
+   at Microsoft.Mashup.Client.ClientShared.UnexpectedExceptionHandler.<>c__DisplayClass1.<HandleException>b__0()
+   at Microsoft.Mashup.Host.Document.SynchronizationContextExtensions.<>c__DisplayClass3.<SendAndMarshalExceptions>b__0(Object null)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at Microsoft.Mashup.Client.ClientShared.WindowManager.ShowDialog[T](T form, IWin32Window owner)
+   at Microsoft.Mashup.Client.ClientShared.Ux.FloatingDialog.FloatingDialog.ShowDialogWithTimeout(IWin32Window owner, Nullable`1 showTimeout)
+   at Microsoft.PowerBI.Client.Windows.FloatingDialog.KoLoadToReportDialog.StartEvaluationAndShowDialog(IEnumerable`1 queriesToLoad, Nullable`1 showTimeout, Boolean requireFullDataRefresh)
+   at Microsoft.PowerBI.Client.Windows.FloatingDialog.KoLoadToReportDialog.TryShowDialogForQueries(Report report, IWin32Window ownerWindow, WindowsHost windowsHost, IQueryServices queryServices, IEnumerable`1 queriesToLoad, LocalizedString title, Boolean requireFullDataRefresh)
+   at Microsoft.PowerBI.Client.Windows.PowerBIDataImporter.LoadQueries(IEnumerable`1 queriesToLoad)
+   at Microsoft.PowerBI.Client.Windows.PowerBIDataImporter.OnImportSuccess(IEnumerable`1 addedQueries, DataImportDestination destination)
+   at Microsoft.Mashup.Client.ClientShared.DataImporter.ProcessImportedQueries(IEnumerable`1 importedQueries, DataImportDestination destination)
+   at Microsoft.Mashup.Client.ClientShared.DataImporter.ImportNavigationSource(Query query)
+   at Microsoft.Mashup.Client.ClientShared.DataImporter.OnGetPreviewResult(PreviewResult preview, Query query, String sourceID, String formulaTitle, Nullable`1 explicitImportDestination, Boolean isNewQuery, Boolean isFromEditor)
+   at Microsoft.Mashup.Client.ClientShared.DataImporter.<>c__DisplayClass17.<OnQuerySettingsResolved>b__14()
+   at Microsoft.Mashup.Host.Document.ExceptionHandlerExtensions.HandleExceptions(IExceptionHandler exceptionHandler, Action action)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
+   at System.Windows.Forms.Control.InvokeMarshaledCallbacks()
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Form.ShowDialog(IWin32Window owner)
+   at Microsoft.Mashup.Client.ClientShared.WindowManager.ShowDialog[T](T form, IWin32Window owner)
+   at Microsoft.PowerBI.Client.Program.<>c__DisplayClassb.<Main>b__0()
+   at Microsoft.Mashup.Host.Document.ExceptionHandlerExtensions.HandleExceptions(IExceptionHandler exceptionHandler, Action action)
+   at Microsoft.PowerBI.Client.Program.Main(String[] args)
+
+
+User ID:
+ffbcc890-661a-472e-aa94-2faaaac741e8
+
+Session ID:
+1fc8cd32-994b-4084-b9d4-f0671d4b891f
+
+Telemetry Enabled:
+True
+
+Model Default Mode:
+Import
+
+Snapshot Trace Logs:
+C:\Users\arp\AppData\Local\Microsoft\Power BI Desktop\FrownSnapShot574703653.zip
+
+Performance Trace Logs:
+C:\Users\arp\AppData\Local\Microsoft\Power BI Desktop\PerformanceTraces.zip
+
+Disabled Preview Features:
+PBI_RedShift
+PBI_Impala
+PBI_Snowflake
+PBI_shapeMapVisualEnabled
+PBI_allowBiDiCrossFilterInDirectQuery
+PBI_forecastEnabled
+PBI_esriEnabled
+PBI_mobileReportAuthoringEnabled
+PBI_snapToDotGrid
+
+Disabled DirectQuery Options:
+DirectQuery_Unrestricted
+
+Cloud:
+GlobalCloud
+
+DPI Scale:
+100%
+
+Formulas:
+
+
+section Section1;
+
+shared KYLIN_CAL_DT = let
+    Source = Odbc.DataSource("dsn=Kylin", [HierarchicalNavigation=true]),
+    DEFAULT_Schema = Source{[Name="DEFAULT",Kind="Schema"]}[Data],
+    KYLIN_CAL_DT_Table = DEFAULT_Schema{[Name="KYLIN_CAL_DT",Kind="Table"]}[Data]
+in
+    KYLIN_CAL_DT_Table;
+
+shared KYLIN_CATEGORY_GROUPINGS = let
+    Source = Odbc.DataSource("dsn=Kylin", [HierarchicalNavigation=true]),
+    DEFAULT_Schema = Source{[Name="DEFAULT",Kind="Schema"]}[Data],
+    KYLIN_CATEGORY_GROUPINGS_Table = DEFAULT_Schema{[Name="KYLIN_CATEGORY_GROUPINGS",Kind="Table"]}[Data]
+in
+    KYLIN_CATEGORY_GROUPINGS_Table;
+
+shared KYLIN_SALES = let
+    Source = Odbc.DataSource("dsn=Kylin", [HierarchicalNavigation=true]),
+    DEFAULT_Schema = Source{[Name="DEFAULT",Kind="Schema"]}[Data],
+    KYLIN_SALES_Table = DEFAULT_Schema{[Name="KYLIN_SALES",Kind="Table"]}[Data]
+in
+    KYLIN_SALES_Table;
