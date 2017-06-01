@@ -30,7 +30,7 @@ We use these two files:
 * Metadata: Is a compressed json in gz with 9.4 Million products (size: 3.4 GB / 10.5 GB)
 * Ratings only: Is an uncompressed CSV file with 82.6 Million of evaluations
 
-You can download it and store as is (without descompress) in _DataDownloaded_ folder, as is:
+Download it and store as is (without descompress) in _DataDownloaded_ folder, as is:
 <p align="center">
   <img src=./Images/01.png />
 </p>
@@ -40,5 +40,15 @@ You can download it and store as is (without descompress) in _DataDownloaded_ fo
 **Note2**: Ratings only file can be substituted for one of smaller files from "subset" section
 
 ### Prepare Dataset
+We need prepare the two original files to be ingested into Hive tables, to do this execute the python scripts
+```
+python processItem.py
+puthon processMetadata.py
+```
+As result you will have two new files in the folder _DataProcesed_, as is:
+<p align="center">
+  <img src=./Images/02.png />
+</p>
 
+### Copy data to Hive and create tables 
 
