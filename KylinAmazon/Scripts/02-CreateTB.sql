@@ -1,6 +1,8 @@
 DROP DATABASE IF EXISTS Amazon_Review CASCADE;
 CREATE DATABASE Amazon_Review;
 
+set hivevar:PathFiles=/Amazon_Review;
+
 
 --Creando tablas CSV
 DROP TABLE IF EXISTS Amazon_Review.FACT_Ratings_CSV;   --Items (In data Source)
@@ -28,8 +30,8 @@ CREATE TABLE  Amazon_Review.DIM_Items_CSV (
 	LINES TERMINATED BY '\n'
 	STORED AS TEXTFILE;
 
-LOAD DATA LOCAL INPATH '/Amazon_Review/item_dedup.csv.bz2' OVERWRITE INTO TABLE Amazon_Review.FACT_Ratings_CSV;
-LOAD DATA LOCAL INPATH '/Amazon_Review/metadata.csv.bz2' OVERWRITE INTO TABLE Amazon_Review.DIM_Items_CSV;
+LOAD DATA LOCAL INPATH  '${hivevar:PathFiles}/item_dedup.csv.bz2' OVERWRITE INTO TABLE Amazon_Review.FACT_Ratings_CSV;
+LOAD DATA LOCAL INPATH  '${hivevar:PathFiles}/metadata.csv.bz2' OVERWRITE INTO TABLE Amazon_Review.DIM_Items_CSV;
 
 
 DROP TABLE IF EXISTS Amazon_Review.FACT_Ratings;   --Items ()
@@ -84,3 +86,6 @@ Create View Amazon_Review.DIM_Items_View AS
 -- Select count(1) from Amazon_Review.DIM_Items;
 -- Select * from Amazon_Review.FACT_Ratings_View  limit 1;
 -- Select * from Amazon_Review.DIM_Items_View  limit 1;
+
+-- Select category from Amazon_Review.DIM_Items  limit 1;
+-- Select count(1) from Amazon_Review.DIM_Items where category="Books";

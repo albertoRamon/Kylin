@@ -2,7 +2,7 @@
 
 
 ### Abstract
-On [_Playing with 80 Million Amazon Product Review Ratings Using Apache Spark_](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), Max Woolf, Uses Apache Spark with Python and R to analyze an Amazon Dataset. 
+On [_Playing with 80 Million Amazon Product Review Ratings Using Apache Spark_](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), Max Woolf, Uses Apache Spark with Python and R to analyze an Amazon dataset. 
 
 We will use [Apache Kylin](http://kylin.apache.org/) and [Tableau](https://www.tableau.com/) to generate reports ad-hoc easily and see the response time of them 
 
@@ -18,19 +18,19 @@ To clone this repository:
 git clone https://github.com/albertoRamon/Kylin.git
 ```
 
-### About Amazon Ratings Dataset
+### About Amazon ratings dataset
 [Download Page](http://jmcauley.ucsd.edu/data/amazon/)
 This dataset provides two types of files:
-* Review files: After a puchase the customer has the posiblity to evaluate the product, from 1 to 5 starts and write comment
+* Review files: After a purchase the customer has the possibility to evaluate the product, from 1 to 5 starts and write comment
 * Metadata file: It's a full description of one product: Name, Brand, Picture, category....
 
-These files are relationed by _asin_ unique identifier for each Amazon Product
+These files are related by _asin_ unique identifier for each Amazon Product
 
 We use these two files:
 * Metadata: Is a compressed json in gz with 9.4 Million products (size: 3.4 GB / 10.5 GB)
 * Ratings only: Is an uncompressed CSV file with 82.6 Million of evaluations
 
-Download it and store as is (without descompress) in _DataDownloaded_ folder, as is:
+Download it and store as is (without decompress) in _DataDownloaded_ folder, as is:
 <p align="center">
   <img src=./Images/01.png />
 </p>
@@ -39,11 +39,11 @@ Download it and store as is (without descompress) in _DataDownloaded_ folder, as
 
 **Note2**: Ratings only file can be substituted for one of smaller files from "subset" section
 
-### Prepare Dataset
+### Prepare dataset
 We need prepare the two original files to be ingested into Hive tables, to do this execute the python scripts
 ```
 python processItem.py
-puthon processMetadata.py
+python processMetadata.py
 ```
 As result you will have two new files in the folder _DataProcesed_, as is:
 <p align="center">
@@ -51,4 +51,101 @@ As result you will have two new files in the folder _DataProcesed_, as is:
 </p>
 
 ### Copy data to Hive and create tables 
+**If you are using Docker:**
+
+Edit _Scripts/01-ImportData.sh_ and particularize ID Docker Image
+```
+ContainerID='58b'
+```
+Execute this scripts: Copy the data to Docker Container and create tables on Hve
+```
+./Scripts/01-ImportData.sh
+```
+
+**If you are NOT using Docker:**
+
+Copy manually the data in  _DataProcesed_ to your cluster gateway
+Edit _Scripts/02-CreateTB.sql_ and particularize the path
+```
+set hivevar:PathFiles=/Amazon_Review;
+```
+Connec to your cluster and execute:
+```
+hive -f 02-CreateTB.sql
+```
+
+## Build Cube
+**1 -Create New project:**
+
+Click on ![alt text](./Images/03.png) and put a name ![alt text](./Images/04.png)
+
+**2 -Import the data source:**
+
+Click on ![alt text](./Images/05.png) & ![alt text](./Images/06.png), select the tables to import (hold _ctrl_ to select more than one) ![alt text](./Images/07.png)
+
+**3 -Create Data Model:**
+
+Click ![alt text](./Images/08.png) & ![alt text](./Images/09.png)
+
+Specify fact table: 
+<p align="center">
+  <img src=./Images/10.png />
+</p>
+
+Specify dim table:
+<p align="center">
+  <img src=./Images/11.png />
+</p>
+
+Specify dimensions columns:
+<p align="center">
+  <img src=./Images/12.png />
+</p>
+
+Specify measures columns:
+<p align="center">
+  <img src=./Images/13.png />
+</p>
+
+**4 -Define Cube:**
+
+Clink on ![alt text](./Images/14.png)
+
+Select the data model defined previously _Amazon_Review_
+<p align="center">
+  <img src=./Images/15.png />
+</p>
+
+Define 2 dimensions as _normal_:
+<p align="center">
+  <img src=./Images/16.png />
+</p>
+
+Define the measures: 
+<p align="center">
+  <img src=./Images/17.png />
+</p>
+
+In _Configuration Overwrites_:
+<p align="center">
+  <img src=./Images/18.png />
+</p>
+
+To launch the build: ![alt text](./Images/19.png) > ![alt text](./Images/20.png)
+
+To process the 80 Millions or rows we used **30 minutes** in a laptop:
+<p align="center">
+  <img src=./Images/21.png />
+</p>
+
+
+### Connect to cube with BI tool
+We used Tableau to generate reports of our new cube:
+<p align="center">
+  <img src=./Images/22.png />
+</p>
+
+<p align="center">
+  <img src=./Images/23.png />
+</p>
 

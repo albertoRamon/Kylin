@@ -1,11 +1,9 @@
-# IDEAS
-# Definir en un array nombres de TB o incluso detectar por el prefijo
-# Sacar todos los paths a variables
-# El nuemro de la imagen tiene que ser una variable
-# Que arranque o check todos los serivicios
-#
+#This Scripts
+# 1 Check if Docker container is runing. If not check if exist and start it
+# 2 ToDo: check if Kylin is runing
+# 3 Create folder in Container and copy files
+# 4 Launch script of create tables
 
-PathProject='~/GitHub/Kylin_ARP/KylinAmazon'
 ContainerID='58b'
 
 
@@ -63,7 +61,6 @@ function find_webrowser {
 
 check_Container_Runing
 
-cd ${PathProject}
 #Execute from HOST  
 	echo "Copying data"
 	docker exec ${ContainerID} mkdir -p /Amazon_Review/
