@@ -6,6 +6,9 @@ On [_Playing with 80 Million Amazon Product Review Ratings Using Apache Spark_](
 
 We will use [Apache Kylin](http://kylin.apache.org/) and [Tableau](https://www.tableau.com/) to generate reports ad-hoc easily and see the response time of them 
 
+<p align="center">
+  <img src=./Images/00.png />
+</p>
 
 ### Required software & hardware
 Software used: 
@@ -15,7 +18,14 @@ Software used:
 
 To clone this repository: 
 ```
-git clone https://github.com/albertoRamon/Kylin.git
+cd ~ &&
+mkdir kylin &&
+cd kylin  &&
+git init &&
+git remote add -f origin https://github.com/albertoRamon/Kylin &&
+git config core.sparseCheckout true &&
+echo "KylinAmazon/" >> .git/info/sparse-checkout &&
+git pull origin master 
 ```
 
 ### About Amazon ratings dataset
