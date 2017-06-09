@@ -1,6 +1,15 @@
 # Docker Image for Kylin using AWS
 
-### Requeriments
+<p align="center">
+  <img src=./Images/00.png />
+</p>
+
+_This is a modification of sequenceiq/kylin:0.7.2_
+
+### Abstract
+Mount quickly an Apache Kylin on AWS thanks to Docker, Without having to access a Hadoop cluster.
+
+### Requirements
 Amazon instance with:
 * 4 Cores
 * 8 GB RAM
@@ -11,7 +20,7 @@ We can use _c4.xlarge_ or superior:
   <img src=./Images/08.png />
 </p>
 
-Add Disk space, by default has only 8 and it is not enought:
+Add Disk space, by default has only 8 and it is not enough:
 <p align="center">
   <img src=./Images/09.png />
 </p>
@@ -27,7 +36,7 @@ Connect to your AIM, in my case:
 ssh -i "/home/arp/.ssh/id_rsa.pem" ec2-user@ec2-54-219-131-131.us-west-1.compute.amazonaws.com
 ```
 
-### INSTALL DOCKER
+### Install Docker & GIT
 
 Install  docker & git: [Detailed Manual](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#install_docker)
 ```bash
@@ -69,7 +78,7 @@ Pull required layers:
   <img src=./Images/01.png />
 </p>
 
-Start to execute dockerfile, comand to instal software:
+Start to execute dockerfile, command to install software:
 <p align="center">
   <img src=./Images/02.png />
 </p>
@@ -77,11 +86,11 @@ Packages dependencies:
 <p align="center">
   <img src=./Images/03.png />
 </p>
-Downloading & Install software:
+Downloading & Installing software:
 <p align="center">
   <img src=./Images/04.png />
 </p>
-Open ports of docker image:
+Open ports of Docker image:
 <p align="center">
   <img src=./Images/05.png />
 </p>
@@ -102,9 +111,9 @@ Finished:
   <img src=./Images/13.png />
 </p>
 
-The install by default started Hadoop Cluster and Kylin service, thus you only need conect to the web pages of them to check it.
+The install by default started Hadoop Cluster and Kylin service, thus you only need connect to the web pages of them to check it.
 
-### Fix ports:
+### Open ports:
 Show map of ports of containers:
 ```bash
 docker ps 
@@ -135,7 +144,7 @@ We need know own Public DNS (It can be changed if we restarted the instance):
   <img src=./Images/20.png />
 </p>
 
-Compose the URL of ambary, _http://hostname:8080_
+Compose the URL of Ambary, _http://hostname:8080_
 In my case:
 * Host name: http://ec2-54-219-131-131.us-west-1.compute.amazonaws.com
 * The port 8080 of container is mapped to 32772 (check your own case)
@@ -222,7 +231,8 @@ You must see a message similar to this:
 
 Acceess to Ambari web console, and click: 
 ![alt text](./Images/27.png) > ![alt text](./Images/28.png)
-All servicel will be stoped:
+
+All services will be stoped:
 <p align="center">
   <img src=./Images/26.png />
 </p>
@@ -239,7 +249,7 @@ docker stop <containerID>
 This is the most simple cube ready to build after installation, with out configuration
 [How to build the cube](http://kylin.apache.org/docs15/tutorial/kylin_sample.html)
 
-In this AWS machine with default conifg only taked 6.15 min
+In this AWS machine with default config only take 6.15 min
 <p align="center">
   <img src=./Images/29.png />
 </p>
@@ -286,11 +296,11 @@ If you will want reuse this docker for bigger projects, the first step is config
 
 **Issues**
 
-The 90% of problems is because HBase is shutdow. Check its status from Ambari
+* The 90% of problems is because HBase is shutdown. Check its status from Ambari
 
-If Ambari don't start: restart Ambari Agent
+* If Ambari don't start: restart Ambari Agent
 ```
 ambari-agent stop  & ambari-agent start
 ```
-Adapt your YARN configuration to the size of your Amazon instance
+* Adapt your YARN configuration to the size of your Amazon instance
 
