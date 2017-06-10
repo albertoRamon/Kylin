@@ -14,8 +14,11 @@ We will use [Apache Kylin](http://kylin.apache.org/) and [Tableau](https://www.t
 Software used: 
 * Kylin 1.6 or superior, [download](http://kylin.apache.org/download/).
 * BI Tool, you can choose your own tool, in this case Tableau Desktop is used, [download](https://www.tableau.com/products/desktop/download).
-* Optional, If you do not have access to a Hadoop Cluster, Docker is a good solution to mount a Hadoop system (I use it and it works with no problem), [download](https://www.docker.com/community-edition).
-
+* Optional, If you do not have access to a Hadoop Cluster, Docker is a good solution to mount a Hadoop system (I use it and it works with no problem), [download](https://www.docker.com/community-edition). Guide step by step to do it: [Docker Image for Kylin using AWS](https://github.com/albertoRamon/Kylin/tree/master/KylinWithDocker)
+Hardware:
+* 4 Cores
+* 8 GB RAM
+* 16 GB HD
 To clone this repository: 
 ```
 cd ~ &&
