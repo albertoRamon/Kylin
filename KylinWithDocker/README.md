@@ -4,7 +4,6 @@
   <img src=./Images/00.png />
 </p>
 
-_This is a modification of sequenceiq/kylin:0.7.2_
 
 ### Abstract
 Mount quickly an Apache Kylin on AWS thanks to Docker, Without having to access a Hadoop cluster.
@@ -53,6 +52,7 @@ git --version
 ```
 
 ### Clone GitHub to get docker file
+_This is a modification of sequenceiq/kylin:0.7.2_
 ```bash
 cd ~ &&
 mkdir kylin &&
