@@ -17,7 +17,7 @@
 ### Pre-requisites
 First, you need to Build Kylin Cube: [Quick Start with Sample Cube](http://kylin.apache.org/docs15/tutorial/kylin_sample.html "Build Instructions") and check the result cube executing:
 
-    select part_dt, sum(price) as total_selled, count(distinct seller_id) as sellers from kylin_sales group by part_dt order by part_dt*
+    select part_dt, sum(price) as total_selled, count(distinct seller_id) as sellers from kylin_sales group by part_dt order by part_dt
 
 <p align="center">
   <img src=./Images/48.png />
