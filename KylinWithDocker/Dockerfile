@@ -4,7 +4,7 @@ MAINTAINER SequenceIQ
 RUN curl -sL http://apache.rediris.es/kylin/apache-kylin-1.6.0/apache-kylin-1.6.0-bin.tar.gz | tar -xz -C /usr/local
 RUN cd /usr/local && ln -s ./apache-kylin-1.6.0-bin kylin
 ENV KYLIN_HOME=/usr/local/kylin
-
+RUN rpm --rebuilddb; yum install -y yum-plugin-ovl
 RUN yum install -y pig hbase tez hadoop snappy snappy-devel hadoop-libhdfs ambari-log4j hive hive-hcatalog hive-webhcat webhcat-tar-hive webhcat-tar-pig mysql-connector-java mysql-server
 
 ADD serf /usr/local/serf
