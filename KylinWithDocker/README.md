@@ -47,7 +47,7 @@ sudo usermod -a -G docker ec2-user
 
 **Log out** and reconnect (if not docker doesn't run OK)
 ```bash
-docker -info &&
+docker info &&
 git --version 
 ```
 
