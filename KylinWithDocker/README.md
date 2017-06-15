@@ -24,7 +24,7 @@ Add Disk space, by default has only 8 and it is not enough:
   <img src=./Images/09.png />
 </p>
 
-Create _Security Group_, we will need change ports more late:
+Create _Security Group_, we will need to change ports later:
 <p align="center">
   <img src=./Images/10.png />
 </p>
@@ -111,10 +111,10 @@ Finished:
   <img src=./Images/13.png />
 </p>
 
-The install by default started Hadoop Cluster and Kylin service, thus you only need connect to the web pages of them to check it.
+The install by default started Hadoop Cluster and Kylin service, thus you only need to connect to the web pages of them to check it.
 
 ### Open ports:
-Show map of ports of containers:
+Show map of containers ports:
 ```bash
 docker ps 
 ```
@@ -127,7 +127,7 @@ In my case the map is like this, the left columns will be different:
   <img src=./Images/15.png />
 </p>
 
-Then we need open Local ports on Amazon Instance to access from outside, in _Security Group_ find _Docker01_ and configure as picture:
+We need to open Local ports on Amazon Instance to access from outside, in _Security Group_ find _Docker01_ and configure as picture:
 <p align="center">
   <img src=./Images/16.png />
 </p>
@@ -139,7 +139,7 @@ docker start <containerID>
 ```
 **Turn-on Hadoop cluster**
 
-We need know own Public DNS (It can be changed if we restarted the instance):
+We need to know our own public DNS (It can be changed if we restarted the instance):
 <p align="center">
   <img src=./Images/20.png />
 </p>
@@ -286,7 +286,7 @@ Change the start command:
 
 **Improve this Apache kylin on Docker**
 
-If you will want reuse this docker for bigger projects, the first step is configure the YARN resources (cores and RAM used to build the cube)
+If you want to reuse this docker for bigger projects, the first step is configure the YARN resources (cores and RAM used to build the cube)
 <p align="center">
   <img src=./Images/30.png />
 </p>
