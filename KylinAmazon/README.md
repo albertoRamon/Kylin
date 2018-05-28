@@ -1,4 +1,5 @@
 # Analyze Amazon Reviews with Apache Kylin
+[Chinese Translation, Yunxia Fu](http://kyligence.io/zh/2017/06/06/apache-kylin-analyse-amazon-product-evaluation/)
 
 
 ### Abstract
